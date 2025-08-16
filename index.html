@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manajemen Data Ternak</title>
+  <link rel="stylesheet" href="stylepetugas.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo Data Ternak">
+      Projeck Hafiz
+    </div>
+    <div class="burger" id="burgerMenu">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <div class="menu" id="menuNav">
+      <span id="userInfo"></span>
+      <div class="admin">
+        <span class="avatar" aria-hidden="true"><i class="ri-instagram-line"></i></span>
+        <span> <a href="https://www.instagram.com/dekorasihafiz/" style="text-decoration: none; color: #ccc; gap: 1px;"> dekorasihafiz</a></span>
+        </div>
+        <div class="admin">
+          <span class="avatar" aria-hidden="true"><i class="ri-facebook-fill"></i></span>
+          <span> <a href="https://www.facebook.com/anis.khoerunisa.16" style="text-decoration: none; color: white;">anis.khoerunisa.16</a></span>
+      </div>
+      <span id="userAccess"></span>
+      <button onclick="showSection('ternakSection')" style="background-color: transparent; border:  1px solid black;">Dekorasi</button>
+      <button onclick="showSection('checklistSection')" style="background-color: transparent; border:  1px solid black;">Bakket/asset</button>
+      <span id="userAccess"></span>
+    </div>
+  </div>
+<div class="content">
+    <header class="topbar">
+        <div class="breadcrumbs">
+          <i class="ri-dashboard-3-line"></i>
+          <span>Projeck Hafiz</span>
+        </div>
+        <div class="admin">
+          <span>User</span>
+          <span class="avatar" aria-hidden="true"><i class="ri-user-3-line"></i></span>
+        </div>
+      </header> <br>   
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Cari produk...">
+      </div> 
+<main>
+  <!-- DAFTAR TERNAK -->
+<section id="ternakSection">
+  <!-- Row Card -->
+  <div class="card-row" id="productList">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="png/dekor21.png" alt="Produk 1">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi perpisahan</h2>
+        <p>Dekorasi perpisahan lengkap (both)</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi perpisahan"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi perpisahan lengkap (both)"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="png/dekor22.png" alt="Produk 2">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi perpisahan</h2>
+        <p>Dekorasi perpisahan event saat di (NINOS) mendekorasi panggung</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi perpisahan"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi perpisahan event saat di (NINOS) mendekorasi panggung"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="png/deor13.jpeg" alt="Produk 3">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun</h2>
+        <p>Dekorasi Ulang tahun bertema mermaid</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Ulang tahun bertema mermaid"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <img src="png/dekor1.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun</h2>
+        <p>Dekorasi Ulang tahun berwarna ungu </p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Ulang tahun berwarna ungu "
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/dekor10.jpeg" alt="Produk 5">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun</h2>
+        <p>Dekorasi Ulang tahun berwarna pingkki </p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Ulang tahun berwarna pinkki "
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/dekor14.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun</h2>
+        <p>Dekorasi Ulang tahun yang bertema tayo ini bisa di costume sesuai kamu minta tema apapun</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Ulang tahun yang bertema tayo ini bisa di costume sesuai kamu minta tema apapun"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/dekor16.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun</h2>
+        <p>Dekorasi ulang tahun bertema bola</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi ulang tahun bertema bola"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/dekor15.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun</h2>
+        <p>Dekorasi Ulang tahun bertema mikymouse</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Ulang tahun bertema mikymouse"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/dekor17.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun</h2>
+        <p>Dekorasi Ulang tahun bertema hello kitty</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Ulang tahun bertema hello kitty"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/dekor18.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun</h2>
+        <p>Dekorasi Ulang tahun bertema cinderela</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Ulang tahun bertema cinderela"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/dekor19.png" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Aqiqah</h2>
+        <p>Dekorasi Aqiqah bertema biru</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Produk 1"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Aqiqah bertema biru"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/dekor2.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Aqiqah</h2>
+        <p>Dekorasi Aqiqah bertema tayo</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Aqiqah"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Aqiqah bertema tayo"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/dekor20.png" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi perpisahan</h2>
+        <p>Dekorasi perpisahan</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi perpisahan"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi perpisahan"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalNama">Detail Produk</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <img id="modalGambar" src="" alt="">
+        <p id="modalDeskripsi"></p>
+        <h3 id="modalHarga" style="color:green; margin-top:10px;"></h3>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!------------------------------ bakket ---------------------------------------------------------------------------------- -->
+  <section  id="checklistSection">
+    <div class="card-row" id="productList">
+    <div class="card">
+      <img src="png/barang.png" alt="Produk 1">
+      <div class="card-body">
+        <h2 class="nama">Bukket makan</h2>
+        <p>Bukket makanan / ulang tahun , costum makanan</p>
+        <div class="harga">Rp 150.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20bukket%20makanan%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Bukket makan"
+             data-harga="Rp 150.000"
+             data-deskripsi="Bukket makanan costum makanan"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="png/bukket.png" alt="Produk 2">
+      <div class="card-body">
+        <h2 class="nama">Bukket uang bunga</h2>
+        <p>Costume uang mainan / asli</p>
+        <div class="harga">Rp 200.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20bukket%20bunga%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Bukket uang bunga"
+             data-harga="Rp 200.000"
+             data-deskripsi="Costume uang mainan / asli"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="png/bukket1.png" alt="Produk 3">
+      <div class="card-body">
+        <h2 class="nama">Bukket uang bunga</h2>
+        <p>Costume uang mainan / asli</p>
+        <div class="harga">Rp 200.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20bukket%20bunga%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Bukket uang bunga"
+             data-harga="Rp 200.000"
+             data-deskripsi="Costume uang mainan / asli"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <!-- <div class="card">
+      <img src="png/dekor1.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Produk 4</h2>
+        <p>Deskripsi singkat tentang produk ini.</p>
+        <div class="harga">Rp 300.000</div>
+        <div class="btn-row">
+          <a href="#" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Produk 1"
+             data-harga="Rp 150.000"
+             data-deskripsi="Produk 1 ini adalah barang terbaik dengan kualitas premium."
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  </section>
+
+  <section id="sectionDetailTernak" style="display:none; margin-top:20px; border:1px solid #ccc; padding:10px; border-radius:5px;">
+  <h3>Detail Ternak</h3>
+ </section>
+
+ </main>
+
+  <div class="button-container">
+    
+    
+  </div>
+
+</div>
+
+<!-- <div id="modalDetailTernak" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalDetailTernak')">&times;</span>
+    <h2>Detail Ternak</h2>
+    <table>
+      <tr><td>Nama Peternak</td><td id="detail_nama_peternak"></td></tr>
+      <tr><td>ID Peternak</td><td id="detail_id_peternak"></td></tr>
+      <tr><td>Tanggal Kejadian</td><td id="detail_tanggal_kejadian"></td></tr>
+      <tr><td>Jenis Laporan</td><td id="detail_jenis_laporan"></td></tr>
+      <tr><td>Jumlah Ternak</td><td id="detail_jumlah_ternak"></td></tr>
+      <tr><td>Lokasi Kejadian</td><td id="detail_lokasi_kejadian"></td></tr>
+      <tr><td>Keterangan</td><td id="detail_keterangan"></td></tr>
+    </table>
+  </div>
+</div> -->
+
+
+
+  <!-- MODAL EDIT CHECKLIST -->
+  <div id="editChecklistModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+       background:rgba(0,0,0,0.5); z-index:1000; overflow:auto;">
+    <div style="background:#fff; margin:5% auto; padding:20px; width:500px; border-radius:10px; position:relative;">
+      <h2>Edit Checklist</h2>
+      <form id="editChecklistForm" onsubmit="event.preventDefault(); updateChecklist();">
+        <input type="hidden" id="edit_fotoLama">
+
+        <label>ID Ternak</label>
+        <input type="text" id="edit_id_ternak" required>
+
+        <label>Nama Petugas</label>
+        <input type="text" id="edit_nama_petugas" required>
+
+        <label>ID Petugas</label>
+        <input type="text" id="edit_id_petugas" required>
+
+        <label>ID Laporan</label>
+        <input type="text" id="edit_id_laporan" required>
+
+        <label>Check Lokasi</label>
+        <input type="text" id="edit_check_lokasi">
+
+        <label>Check Sesuai Jumlah</label>
+        <input type="text" id="edit_check_sesuai_jumlah">
+
+        <label>Check Ada Foto</label>
+        <input type="text" id="edit_check_ada_foto">
+
+        <label>Check Lengkap</label>
+        <input type="text" id="edit_check_lengkap">
+
+        <label>Status</label>
+        <select id="edit_status">
+          <option value="Terverifikasi">Terverifikasi</option>
+          <option value="Perlu Perbaikan">Perlu Perbaikan</option>
+        </select>
+
+        <label>Catatan Petugas</label>
+        <textarea id="edit_catatan_petugas"></textarea>
+
+        <label>Foto Baru (Opsional)</label>
+        <input type="file" id="edit_foto" accept="image/*">
+
+        <div style="margin-top:15px;">
+          <button type="submit">Simpan Perubahan</button>
+          <button type="button" onclick="closeEditModal()">Batal</button>
+        </div>
+      </form>
+
+      <!-- Tombol Close -->
+      <span onclick="closeEditModal()" style="position:absolute; top:10px; right:15px; cursor:pointer; font-size:20px;">&times;</span>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL TAMBAH CHECKLIST -->
+  <div id="modalChecklist" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modalChecklist')">&times;</span>
+      <h2>Tambah Checklist</h2>
+      <input id="id_ternak" placeholder="ID Ternak">
+      <input id="nama_petugas" placeholder="Nama Petugas">
+      <input id="id_petugas" placeholder="ID Petugas">
+      <input id="id_laporan" placeholder="ID Laporan">
+      <input id="check_lokasi" placeholder="Check Lokasi (0/1)">
+      <input id="check_sesuai_jumlah" placeholder="Check Sesuai Jumlah (0/1)">
+      <input id="check_ada_foto" placeholder="Check Ada Foto (0/1)">
+      <input id="check_lengkap" placeholder="Check Lengkap (0/1)">
+      <input id="status" placeholder="Status">
+      <input id="catatan_petugas" placeholder="Catatan">
+      <button onclick="addChecklist()">Tambah</button>
+    </div>
+  </div>
+
+
+  <!-- MODAL DETAIL TERNAK -->
+  <div id="detailModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Detail Data Ternak</h2>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+</div>
+  <script src="petugas.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>

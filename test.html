@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Produk dengan Modal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Search box */
+    .search-box {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .search-box input {
+      width: 300px;
+      padding: 10px;
+      border: 2px solid #007bff;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    /* Grid Card */
+    .card-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .card-row {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .card-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 15px;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin: 10px 0;
+    }
+
+    .harga {
+      font-size: 18px;
+      font-weight: bold;
+      color: green;
+      margin-top: 10px;
+    }
+
+    /* Tombol */
+    .btn-row {
+      display: flex;
+      justify-content: space-between; /* kiri - kanan */
+      margin-top: 15px;
+      gap: 10px;
+    }
+
+    .btn {
+      flex: 1;
+      text-align: center;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .btn-beli {
+      background: #007bff;
+      color: #fff;
+    }
+    .btn-beli:hover {
+      background: #0056b3;
+    }
+
+    .btn-view {
+      background: #28a745;
+      color: #fff;
+    }
+    .btn-view:hover {
+      background: #1e7e34;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .modal-content {
+      background: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 12px;
+      width: 80%;
+      max-width: 500px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      animation: fadeIn 0.3s;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .modal-header h2 {
+      margin: 0;
+    }
+
+    .close {
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .close:hover {
+      color: red;
+    }
+
+    .modal-body img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .modal-body p {
+      font-size: 14px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <!-- Search -->
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Cari produk...">
+  </div>
+
+  <!-- Row Card -->
+  <div class="card-row" id="productList">
+    <!-- Card contoh -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200" alt="Produk 1">
+      <div class="card-body">
+        <h2 class="nama">Produk 1</h2>
+        <p>Deskripsi singkat tentang produk ini.</p>
+        <div class="harga">Rp 150.000</div>
+        <div class="btn-row">
+          <a href="#" class="btn btn-beli">Beli Sekarang</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Produk 1"
+             data-harga="Rp 150.000"
+             data-deskripsi="Produk 1 ini adalah barang terbaik dengan kualitas premium."
+             data-gambar="https://via.placeholder.com/400x250">View</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalNama">Detail Produk</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <img id="modalGambar" src="" alt="">
+        <p id="modalDeskripsi"></p>
+        <h3 id="modalHarga" style="color:green; margin-top:10px;"></h3>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Search filter
+    document.getElementById("searchInput").addEventListener("keyup", function() {
+      let filter = this.value.toLowerCase();
+      let cards = document.querySelectorAll(".card");
+
+      cards.forEach(card => {
+        let namaProduk = card.querySelector(".nama").textContent.toLowerCase();
+        card.style.display = namaProduk.includes(filter) ? "" : "none";
+      });
+    });
+
+    // Modal logic
+    const modal = document.getElementById("productModal");
+    const modalNama = document.getElementById("modalNama");
+    const modalHarga = document.getElementById("modalHarga");
+    const modalDeskripsi = document.getElementById("modalDeskripsi");
+    const modalGambar = document.getElementById("modalGambar");
+    const closeBtn = document.querySelector(".close");
+
+    document.querySelectorAll(".btn-view").forEach(btn => {
+      btn.addEventListener("click", function(e) {
+        e.preventDefault();
+        modalNama.textContent = this.dataset.nama;
+        modalHarga.textContent = this.dataset.harga;
+        modalDeskripsi.textContent = this.dataset.deskripsi;
+        modalGambar.src = this.dataset.gambar;
+        modal.style.display = "block";
+      });
+    });
+
+    closeBtn.onclick = () => modal.style.display = "none";
+    window.onclick = (e) => { if (e.target == modal) modal.style.display = "none"; }
+  </script>
+</body>
+</html>
