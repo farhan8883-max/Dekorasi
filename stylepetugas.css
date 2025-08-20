@@ -511,126 +511,12 @@ ul li .delete-btn:hover {
   min-width: 800px; /* agar horizontal scroll jika kolom banyak */
   background: #fff;
 }
-
-/* Header tabel */
-#userTable thead th {
-  background: #2196F3;
-  color: white;
-  position: sticky;
-  top: 0; /* sticky di atas */
-  z-index: 2;
-  padding: 10px;
-  border-bottom: 2px solid #ddd;
-}
-
-/* Sel tabel */
-#userTable td, 
-#userTable th {
-  padding: 10px;
-  border-bottom: 1px solid #eee;
-  text-align: left;
-  white-space: nowrap;
-}
-
-/* Efek hover baris */
-#userTable tbody tr:hover {
-  background-color: #f5f5f5;
-  cursor: pointer;
-}
-
-/* Tombol aksi */
-#userTable button {
-  padding: 5px 8px;
-  border: none;
-  border-radius: 4px;
-  margin: 0 2px;
-}
-
-#userTable .edit-btn {
-  background: #2196F3;
-  color: white;
-}
-
-#userTable .delete-btn {
-  background: #f44336;
-  color: white;
-}
-
 /* Container agar tabel bisa scroll */
 #ternakTableContainer {
   max-height: 300px; /* tinggi area scroll */
   overflow-y: auto;
   border: 1px solid #ccc;
   border-radius: 6px;
-}
-
-/* Gaya umum tabel */
-#ternakTable {
-  border-collapse: collapse;
-  width: 100%;
-  min-width: 800px; /* agar horizontal scroll jika kolom banyak */
-  background: #fff;
-}
-
-/* Header tabel */
-#ternakTable thead th {
-  background: #2980b9;
-  color: white;
-  position: sticky;
-  top: 0; /* sticky di atas */
-  z-index: 2;
-  padding: 10px;
-  border-bottom: 2px solid #ddd;
-}
-
-/* Sel tabel */
-#ternakTable td, 
-#ternakTable th {
-  padding: 10px;
-  border-bottom: 1px solid #eee;
-  text-align: left;
-  white-space: nowrap;
-}
-
-/* Efek hover baris */
-#ternakTable tbody tr:hover {
-  background-color: #f5f5f5;
-  cursor: pointer;
-}
-
-/* Tombol aksi */
-#ternakTable button {
-  padding: 5px 8px;
-  border: none;
-  border-radius: 4px;
-  margin: 0 2px;
-}
-
-#ternakTable .edit-btn {
-  background: #2196F3;
-  color: white;
-}
-
-#ternakTable .delete-btn {
-  background: #f44336;
-  color: white;
-}
-
-/* Table container scrollable both directions */
-.table-container {
-  max-height: 300px;        /* batas tinggi untuk vertical scroll */
-  overflow-y: auto;         /* scroll vertikal */
-  overflow-x: auto;         /* scroll horizontal */
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-/* Biar tabel tidak hancur di layar kecil */
-table {
-  border-collapse: collapse;
-  width: 100%;
-  min-width: 800px;         /* supaya ada horizontal scroll bila kolom banyak */
-  background: #fff;
 }
 
 section {
@@ -929,10 +815,45 @@ section.active {
     .btn-beli {
       background: #007bff;
       color: #fff;
+      
     }
     .btn-beli:hover {
       background: #0056b3;
     }
+
+    .btn-barang {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;            /* biar isi bisa fleksibel */
+  align-items: center;             /* vertikal tengah */
+  justify-content: center;         /* teks di tengah */
+  gap: 8px;                        /* jarak antar icon/teks kalau ada */
+  transition: background 0.3s, transform 0.1s;
+  text-decoration: none;           /* kalau <a> link */
+}
+
+/* Hover effect */
+.btn-barang:hover {
+  background: #0069d9;
+}
+
+/* Klik (active) effect */
+.btn-barang:active {
+  transform: scale(0.97);
+}
+
+/* Fokus outline */
+.btn-barang:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.4);
+}
+
 
     .btn-view {
       background: #28a745;
@@ -1002,3 +923,362 @@ section.active {
       font-size: 14px;
       color: #444;
     }
+/* Modal kecil di pojok kanan bawah */
+    .modal1 {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      width: 300px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      animation: slideIn 0.3s ease-out;
+    }
+
+    /* Tombol close */
+    .close-btn {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      margin-top: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .close-btn:hover {
+      background: #0056b3;
+    }
+
+    /* Tombol buka modal */
+    .open-btn {
+      background: #28a745;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .open-btn:hover {
+      background: #1c7c31;
+    }
+
+    /* Animasi muncul dari kanan */
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(100%); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+
+/* ==== Modal Wrapper ==== */
+/* ==== Modal Wrapper ==== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  padding-top: 50px;
+}
+
+/* ==== Modal Box ==== */
+.modal-content {
+  background: #fff;
+  margin: auto;
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* ==== Close Button ==== */
+.modal .close {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+  color: #777;
+}
+.modal .close:hover { color: #e74c3c; }
+
+/* ==== Form Horizontal ==== */
+#orderForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Baris form */
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Label rata kanan, biar sejajar */
+.form-group label {
+  width: 130px;
+  font-weight: 600;
+  color: #333;
+  text-align: right;
+}
+
+/* Input / textarea sejajar setelah label */
+.form-group input,
+.form-group textarea {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Textarea lebih tinggi */
+.form-group textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+/* Tombol aksi */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.form-actions button {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-actions .btn-cancel {
+  background: #ccc;
+  color: #333;
+}
+.form-actions .btn-cancel:hover {
+  background: #b3b3b3;
+}
+
+.form-actions .btn-submit {
+  background: #4caf50;
+  color: #fff;
+}
+.form-actions .btn-submit:hover {
+  background: #43a047;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* ==== Modal Overlay ==== */
+#barangModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  inset: 0; /* shorthand untuk top, right, bottom, left */
+  background: rgba(0,0,0,0.6);
+  padding: 30px 10px;
+  overflow-y: auto;
+}
+
+/* ==== Modal Box ==== */
+#barangModal .modal-content {
+  background: #fff;
+  margin: auto;
+  padding: 25px 30px;
+  border-radius: 12px;
+  width: 95%;
+  max-width: 700px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* ==== Judul ==== */
+#barangModal h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  text-align: left;
+}
+
+/* ==== Tombol Close ==== */
+#barangModal .close {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+}
+#barangModal .close:hover {
+  color: #e74c3c;
+}
+
+/* ==== Form ==== */
+#barangForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Satu baris form */
+#barangForm .form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+/* Label di kiri */
+#barangForm label {
+  min-width: 120px;
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+  padding-top: 8px;
+}
+
+/* Input dan textarea rata kiri dan lebar */
+#barangForm input,
+#barangForm textarea {
+  flex: 1;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border 0.2s;
+}
+
+#barangForm input:focus,
+#barangForm textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+#barangForm textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+/* ==== Tombol Aksi ==== */
+#barangForm .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+#barangForm .form-actions button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#barangForm .btn-cancel {
+  background: #ff0000;
+  color: #ffffff;
+}
+#barangForm .btn-cancel:hover {
+  background: #ec3232;
+}
+
+#barangForm .btn-submit {
+  background:#0056b3;
+  color: #fff;
+}
+#barangForm .btn-submit:hover {
+  background: #2464a9;
+}
+
+/* ==== Responsiveness ==== */
+@media (max-width: 300px) {
+  #barangForm .form-group {
+    flex-direction: column; /* label di atas input */
+    align-items: stretch;
+  }
+
+  #barangForm label {
+    min-width: unset;
+    padding-top: 0;
+  }
+}
+/* Modal kecil di pojok kanan bawah */
+.modal1 {
+  display: none; /* default tidak tampil */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  animation: slideIn 0.3s ease-out;
+  text-align: center;
+}
+
+/* Animasi muncul dari kanan */
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(100%); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Tombol tutup modal */
+.close-btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  background: #0056b3;
+}
+
+/* Tombol buka modal */
+.open-btn {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.open-btn:hover {
+  background: #1c7c31;
+}
