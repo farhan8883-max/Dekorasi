@@ -471,6 +471,112 @@ function exportTernak() {
 
 
 
+// Buka modal form ketika klik tombol pesan
+  document.querySelectorAll(".btn-beli").forEach(btn => {
+    btn.addEventListener("click", function(e){
+      e.preventDefault();
+      let card = this.closest(".card");
+      let produk = card.querySelector(".nama").innerText;
+      let harga = card.querySelector(".harga").innerText;
+
+      document.getElementById("orderProduk").value = produk;
+      document.getElementById("orderHarga").value = harga;
+      document.getElementById("orderModal").style.display = "block";
+    });
+  });
+
+  // Tutup modal
+  function closeOrderModal(){
+    document.getElementById("orderModal").style.display = "none";
+  }
+
+  // Submit Form
+  function submitOrder(e){
+    e.preventDefault();
+    let produk = document.getElementById("orderProduk").value;
+    let harga = document.getElementById("orderHarga").value;
+    let nama = document.getElementById("orderNama").value;
+    let hp = document.getElementById("orderHP").value;
+    let tanggal = document.getElementById("orderTanggal").value;
+    let alamat = document.getElementById("orderAlamat").value;
+    let catatan = document.getElementById("orderCatatan").value;
+
+    let pesan = `(pesan dari website) 
+Assalamu'alaikum, saya ingin pesan:
+Produk: ${produk}
+Harga: ${harga}
+Nama: ${nama}
+No HP: ${hp}
+Tanggal Acara: ${tanggal}
+Alamat Acara: ${alamat}
+Catatan: ${catatan}`;
+
+    // encode pesan biar aman di URL
+    let url = "https://wa.me/6285271106448?text=" + encodeURIComponent(pesan);
+    window.open(url, "_blank");
+
+    closeOrderModal();
+  }
+
+  // Tutup modal jika klik di luar
+  window.onclick = function(event) {
+    let modal = document.getElementById("orderModal");
+    if (event.target == modal) {
+      closeOrderModal();
+    }
+  }
+
+  function openWelcomeModal() {
+  const modal = document.getElementById("welcomeModal");
+  modal.style.display = "block";
+  setTimeout(() => {
+    modal.classList.add("show");
+  }, 10); // delay kecil supaya animasi CSS jalan
+}
+
+function closeWelcomeModal() {
+  const modal = document.getElementById("welcomeModal");
+  modal.classList.remove("show");
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 400); // tunggu animasi selesai
+}
+
+// otomatis muncul saat halaman selesai dimuat
+window.onload = function() {
+  openWelcomeModal();
+}
+
+// === Modal Barang ===
+function openBarangModal(nama, harga) {
+  document.getElementById("barangProduk").value = nama;
+  document.getElementById("barangHarga").value = harga;
+  document.getElementById("barangModal").style.display = "block";
+}
+
+function closeBarangModal() {
+  document.getElementById("barangModal").style.display = "none";
+}
+
+// Submit Pesanan Barang
+function submitBarang(event) {
+  event.preventDefault();
+
+  let produk = document.getElementById("barangProduk").value;
+  let harga = document.getElementById("barangHarga").value;
+  let nama = document.getElementById("barangNama").value;
+  let hp = document.getElementById("barangHP").value;
+  let alamat = document.getElementById("barangAlamat").value;
+  let catatan = document.getElementById("barangCatatan").value;
+
+  let pesan = `Assalamu'alaikum, saya ingin pesan:\n\nProduk: ${produk}\nHarga: ${harga}\n\nNama: ${nama}\nHP: ${hp}\nAlamat: ${alamat}\nCatatan: ${catatan}`;
+
+  let waUrl = "https://wa.me/6285880548049?text=" + encodeURIComponent(pesan);
+  window.open(waUrl, "_blank");
+
+  closeBarangModal();
+}
+
 
 
 // Set section awal yang aktif, misal User
