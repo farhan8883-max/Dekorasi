@@ -577,6 +577,84 @@ function submitBarang(event) {
   closeBarangModal();
 }
 
+// Simpan style awal productList
+const productList = document.getElementById("productList");
+const defaultDisplay = window.getComputedStyle(productList).display;
+
+// Event tombol lihat → tampilkan detail produk di section
+document.querySelectorAll(".btn-view").forEach(btn => {
+  btn.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    // Cari parent card
+    const card = this.closest(".card");
+
+    // Ambil data dari card
+    const nama = card.querySelector(".nama").textContent;
+    const harga = card.querySelector(".harga").textContent;
+    const deskripsi = card.querySelector("p").textContent;
+    const gambar = card.querySelector("img").src;
+
+    // Isi data ke section detail
+    document.getElementById("detailNama").textContent = nama;
+    document.getElementById("detailHarga").textContent = harga;
+    document.getElementById("detailDeskripsi").textContent = deskripsi;
+    document.getElementById("detailGambar").src = gambar;
+
+    // Sembunyikan daftar produk & tampilkan detail
+    productList.style.display = "none";
+    document.getElementById("sectionDetailTernak").style.display = "block";
+
+    // Scroll ke atas biar detail langsung terlihat
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
+
+// Tombol kembali → tampilkan daftar produk lagi sesuai style awal
+function backToList() {
+  document.getElementById("sectionDetailTernak").style.display = "none";
+  productList.style.display = defaultDisplay; // pakai style asli
+}
+
+
+// Simpan style awal productList bukket
+const productListBukket = document.getElementById("productListBukket");
+const defaultDisplayBukket = window.getComputedStyle(productListBukket).display;
+
+// Event tombol lihat → tampilkan detail produk di section Bukket
+document.querySelectorAll(".btn-view-bukket").forEach(btn => {
+  btn.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    // Cari parent card
+    const card = this.closest(".card");
+
+    // Ambil data dari card
+    const nama = card.querySelector(".nama").textContent;
+    const harga = card.querySelector(".harga").textContent;
+    const deskripsi = card.querySelector("p").textContent;
+    const gambar = card.querySelector("img").src;
+
+    // Isi data ke section detail Bukket
+    document.getElementById("detailNamaBukket").textContent = nama;
+    document.getElementById("detailHargaBukket").textContent = harga;
+    document.getElementById("detailDeskripsiBukket").textContent = deskripsi;
+    document.getElementById("detailGambarBukket").src = gambar;
+
+    // Sembunyikan daftar produk & tampilkan detail
+    productListBukket.style.display = "none";
+    document.getElementById("sectionDetailBukket").style.display = "block";
+
+    // Scroll ke atas biar detail langsung terlihat
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
+
+// Tombol kembali → tampilkan daftar produk bukket sesuai style awal
+function backToListBukket() {
+  document.getElementById("sectionDetailBukket").style.display = "none";
+  productListBukket.style.display = defaultDisplayBukket; // pakai style asli
+}
 
 
 // Set section awal yang aktif, misal User
