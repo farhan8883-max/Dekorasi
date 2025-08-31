@@ -1282,3 +1282,87 @@ section.active {
 .open-btn:hover {
   background: #1c7c31;
 }
+
+
+/* bukket */
+.btn-view-bukket {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #3498db;   /* biru elegan */
+  color: #fff;                /* teks putih */
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;       /* hilangkan underline */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-view-bukket:hover {
+  background-color: #2980b9;   /* biru lebih gelap saat hover */
+  transform: translateY(-2px); /* sedikit naik saat hover */
+}
+
+.btn-view-bukket:active {
+  background-color: #1f618d;   /* biru lebih pekat saat ditekan */
+  transform: translateY(0);    /* balik normal */
+}
+
+/* Atur kontainer detail agar gambar tidak keluar */
+
+/* Gambar produk agar responsif */
+#detailGambar {
+  width: 100%;            /* selalu mengikuti lebar kontainer */
+  max-width: 400px;       /* batas maksimal di layar besar */
+  height: auto;           /* biar proporsi gambar terjaga */
+  border-radius: 8px;
+  margin: 10px 0;
+  object-fit: contain;    /* contain → gambar tidak terpotong */
+}
+
+/* 📱 Responsive untuk layar kecil */
+@media (max-width: 600px) {
+  #detailGambar {
+    max-width: 100%;      /* full width di hp */
+  }
+}
+
+/* Gambar produk agar responsif */
+#detailGambarBukket {
+  width: 100%;            /* selalu mengikuti lebar kontainer */
+  max-width: 400px;       /* batas maksimal di layar besar */
+  height: auto;           /* biar proporsi gambar terjaga */
+  border-radius: 8px;
+  margin: 10px 0;
+  object-fit: contain;    /* contain → gambar tidak terpotong */
+}
+
+/* 📱 Responsive untuk layar kecil */
+@media (max-width: 600px) {
+  #detailGambarBukket {
+    max-width: 100%;      /* full width di hp */
+  }
+}
+
+.card p {
+  display: none;
+  margin: 8px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+#sectionDetailTernak h4
+{
+  display: none;
+  margin: 8px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+#sectionDetailBukket h4 {
+    display: none;
+    margin: 8px 0;
+    color: #555;
+    font-size: 14px;
+}
