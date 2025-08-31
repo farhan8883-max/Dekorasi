@@ -48,13 +48,14 @@
           <span class="avatar" aria-hidden="true"><i class="ri-user-3-line"></i></span>
         </div>
       </header> <br>   
-      <div class="search-box">
-        <input type="text" id="searchInput" placeholder="Cari produk...">
-      </div> 
+      
 <main>
   <!-- DAFTAR TERNAK -->
 <section id="ternakSection">
   <!-- Row Card -->
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Cari produk...">
+      </div>
   <div class="card-row" id="productList">
     <!-- Card 1 -->
     <div class="card">
@@ -288,25 +289,23 @@
     </div>
   </div>
 
-  <!-- Modal -->
-  <div id="productModal" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 id="modalNama">Detail Produk</h2>
-        <span class="close">&times;</span>
-      </div>
-      <div class="modal-body">
-        <img id="modalGambar" src="" alt="">
-        <p id="modalDeskripsi"></p>
-        <h3 id="modalHarga" style="color:green; margin-top:10px;"></h3>
-      </div>
-    </div>
-  </div>
+  <!-- Section Detail Produk -->
+<section id="sectionDetailTernak" style="display:none; margin-top:20px; padding:15px; border-radius:8px;">
+  <h3 id="detailNama">Nama Produk</h3>
+  <img id="detailGambar" src="" alt="Produk" style="max-width:300px; border-radius:8px; margin:10px 0;">
+  <p id="detailDeskripsi"></p>
+  <h4 id="detailHarga" style="color:green;"></h4>
+  <button onclick="backToList()" style="margin-top:10px; padding:8px 15px; background:#444; color:#fff; border:none; border-radius:5px; cursor:pointer;">Kembali</button>
+</section>
+
   </section>
 
   <!------------------------------ bakket ---------------------------------------------------------------------------------- -->
   <section  id="checklistSection">
-    <div class="card-row" id="productList">
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Cari produk...">
+      </div>
+    <div class="card-row" id="productListBukket">
     <div class="card">
       <img src="png/barang.png" alt="Produk 1">
       <div class="card-body">
@@ -315,11 +314,11 @@
         <div class="harga">Rp 150.000</div>
         <div class="btn-row">
           <a href="#" class="btn-barang" onclick="openBarangModal('Bukket makanan', 'Rp 150.000')">pesan</a>
-          <a href="#" class="btn btn-view"
+          <a href="#" class="btn btn-view-bukket"
              data-nama="Bukket makan"
              data-harga="Rp 150.000"
              data-deskripsi="Bukket makanan costum makanan"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+             data-gambar="png/barang.png">lihat</a>
         </div>
       </div>
     </div>
@@ -333,11 +332,11 @@
         <div class="harga">Rp 200.000</div>
         <div class="btn-row">
           <a href="#" class="btn-barang" onclick="openBarangModal('Bukket uang bunga warna hitam', 'Rp 200.000')">pesan</a>
-          <a href="#" class="btn btn-view"
+          <a href="#" class="btn btn-view-bukket"
              data-nama="Bukket uang bunga"
              data-harga="Rp 200.000"
              data-deskripsi="Costume uang mainan / asli"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+             data-gambar="png/bukket.png">lihat</a>
         </div>
       </div>
     </div>
@@ -351,33 +350,24 @@
         <div class="harga">Rp 200.000</div>
         <div class="btn-row">
           <a href="#" class="btn-barang" onclick="openBarangModal('Bukket uang bunga tema (doraemon)', 'Rp 200.000')">pesan</a>
-          <a href="#" class="btn btn-view"
+          <a href="#" class="btn btn-view-bukket"
              data-nama="Bukket uang bunga"
              data-harga="Rp 200.000"
              data-deskripsi="Costume uang mainan / asli"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+             data-gambar="png/bukket1.png">lihat</a>
         </div>
       </div>
     </div>
 
-    <!-- Card 4 -->
-    <!-- <div class="card">
-      <img src="png/dekor1.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Produk 4</h2>
-        <p>Deskripsi singkat tentang produk ini.</p>
-        <div class="harga">Rp 300.000</div>
-        <div class="btn-row">
-          <a href="#" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Produk 1"
-             data-harga="Rp 150.000"
-             data-deskripsi="Produk 1 ini adalah barang terbaik dengan kualitas premium."
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div> -->
   </div>
+ <!-- Detail Produk khusus Bukket -->
+  <section id="sectionDetailBukket" style="display:none; margin-top:20px; border:1px solid #ccc; padding:15px; border-radius:8px;">
+    <h3 id="detailNamaBukket">Nama Produk</h3>
+    <img id="detailGambarBukket" src="" alt="Produk" style="max-width:300px; border-radius:8px; margin:10px 0;">
+    <p id="detailDeskripsiBukket"></p>
+    <h4 id="detailHargaBukket" style="color:green;"></h4>
+    <button onclick="backToListBukket()" style="margin-top:10px; padding:8px 15px; background:#444; color:#fff; border:none; border-radius:5px; cursor:pointer;">Kembali</button>
+  </section>
   </section>
 
   <section id="sectionDetailTernak" style="display:none; margin-top:20px; border:1px solid #ccc; padding:10px; border-radius:5px;">
@@ -387,31 +377,9 @@
  </main>
 
   <div class="button-container">
-    
-    
   </div>
-
 </div>
 
-
-<!-- MODAL TAMBAH CHECKLIST -->
-  <div id="modalChecklist" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modalChecklist')">&times;</span>
-      <h2>Tambah Checklist</h2>
-      <input id="id_ternak" placeholder="ID Ternak">
-      <input id="nama_petugas" placeholder="Nama Petugas">
-      <input id="id_petugas" placeholder="ID Petugas">
-      <input id="id_laporan" placeholder="ID Laporan">
-      <input id="check_lokasi" placeholder="Check Lokasi (0/1)">
-      <input id="check_sesuai_jumlah" placeholder="Check Sesuai Jumlah (0/1)">
-      <input id="check_ada_foto" placeholder="Check Ada Foto (0/1)">
-      <input id="check_lengkap" placeholder="Check Lengkap (0/1)">
-      <input id="status" placeholder="Status">
-      <input id="catatan_petugas" placeholder="Catatan">
-      <button onclick="addChecklist()">Tambah</button>
-    </div>
-  </div>  
 <!-- MODAL PESAN -->
 <!-- Modal Pesanan Barang -->
 <!-- Modal Pesanan Barang -->
@@ -465,7 +433,7 @@
     <span class="close" onclick="closeWelcomeModal()">&times;</span>
     <h2>Selamat Datang 👋</h2>
     <p>Terima kasih sudah mengunjungi <b>Project Hafiz</b>.<br>
-       Silakan pilih produk dekorasi atau bakket Disini, Disini juga bisa costume looh.</p>
+       Silakan pilih produk dekorasi atau bakket sesuai kebutuhan Anda.</p>
     <button class="btn-start" onclick="closeWelcomeModal()">Mulai Belanja</button>
   </div>
 </div>
