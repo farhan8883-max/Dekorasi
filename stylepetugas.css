@@ -1286,21 +1286,12 @@ section.active {
 
 /* bukket */
 .btn-view-bukket {
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #3498db;   /* biru elegan */
-  color: #fff;                /* teks putih */
-  font-size: 14px;
-  font-weight: 500;
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;       /* hilangkan underline */
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  background-color:  #28a745;   /* biru elegan */
+  color: white;
 }
 
 .btn-view-bukket:hover {
-  background-color: #2980b9;   /* biru lebih gelap saat hover */
+  background-color: #1e7e34;   /* biru lebih gelap saat hover */
   transform: translateY(-2px); /* sedikit naik saat hover */
 }
 
