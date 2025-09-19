@@ -31,7 +31,7 @@ body, html {
   left: 0;
   width: 250px;
   height: 100vh;
-  background-color: #2563eb;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
   color: white;
   display: flex;
   flex-direction: column;
@@ -77,7 +77,7 @@ body, html {
 
 #logout {
   padding: 0.6rem 1rem;
-  background-color: #ef4444;
+  background: linear-gradient(135deg, #ef4444, #b91c1c);
   border: none;
   border-radius: 8px;
   color: white;
@@ -93,7 +93,7 @@ body, html {
   display: inline-block;
   text-align: center;
   padding: 0.6rem 1rem;
-  background-color: #10b981;
+  background: linear-gradient(135deg, #10b981, #047857);
   color: white;
   border-radius: 8px;
   font-weight: 600;
@@ -372,7 +372,7 @@ button {
   margin: 5px 0;
   border: none;
   border-radius: 6px;
-  background: #3498db;
+   background: linear-gradient(135deg, #3498db, #2980b9);
   color: white;
   cursor: pointer;
   transition: background 0.3s;
@@ -545,7 +545,7 @@ section.active {
 
 /* Card style */
 .card {
-  background: #fff;
+  background: linear-gradient(180deg, #ffffff, #f3f4f6);
   border-radius: 12px;
   padding: 0.2rem;
   text-align: center;
