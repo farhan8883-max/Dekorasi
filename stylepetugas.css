@@ -31,7 +31,7 @@ body, html {
   left: 0;
   width: 250px;
   height: 100vh;
-  background: linear-gradient(135deg, #2563eb, #1e40af);
+  background-color: #ef0070;
   color: white;
   display: flex;
   flex-direction: column;
@@ -166,7 +166,7 @@ body > .main-content {
     position: fixed;
     top: 60px;
     left: 0;
-    background-color: #2563eb;
+    background-color: #6B3F2A;
     width: 100%;
     max-height: 0;
     overflow: hidden;
@@ -261,7 +261,7 @@ body > .main-content {
         position: absolute;
         top: 65px;
         right: 0;
-        background: #0056b3;
+        background: #ef0070;
         flex-direction: column;
         align-items: flex-start;
         padding: 15px;
@@ -372,14 +372,14 @@ button {
   margin: 5px 0;
   border: none;
   border-radius: 6px;
-   background: linear-gradient(135deg, #3498db, #2980b9);
+  background-color: #ef0070;
   color: white;
   cursor: pointer;
   transition: background 0.3s;
 }
 
 button:hover {
-  background: #2980b9;
+  background: #ef0070;
 }
 
 /* Container untuk UL agar bisa scroll */
@@ -647,7 +647,7 @@ section.active {
   align-items: center;
   gap: 8px;
   font-weight: 600;
-  color: #2563eb;
+  color: #ef0070;
 }
 
 .topbar .breadcrumbs i {
@@ -668,7 +668,7 @@ section.active {
   align-items: center;
   width: 30px;
   height: 30px;
-  background-color: #2563eb;
+  background-color: #ef0070;
   color: white;
   border-radius: 50%;
   font-size: 18px;
@@ -727,7 +727,7 @@ section.active {
     .search-box input {
       width: 300px;
       padding: 10px;
-      border: 2px solid #007bff;
+      border: 2px solid #ef0070;
       border-radius: 8px;
       font-size: 16px;
     }
@@ -763,6 +763,7 @@ section.active {
 
     .card:hover {
       transform: translateY(-5px);
+      box-shadow: inset 2px 2px 20px #c0286f;
     }
 
     .card img {
@@ -813,16 +814,16 @@ section.active {
     }
 
     .btn-beli {
-      background: #007bff;
+      background: #ef0070;
       color: #fff;
       
     }
     .btn-beli:hover {
-      background: #0056b3;
+      background: #fc3190;
     }
 
     .btn-barang {
-  background: #007bff;
+  background: #ef0070;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -840,7 +841,7 @@ section.active {
 
 /* Hover effect */
 .btn-barang:hover {
-  background: #0069d9;
+  background: #fc3190;
 }
 
 /* Klik (active) effect */
@@ -856,11 +857,11 @@ section.active {
 
 
     .btn-view {
-      background: #28a745;
-      color: #fff;
+      background: #c0286f;
+      color: #ffffff;
     }
     .btn-view:hover {
-      background: #1e7e34;
+      background: rgb(121, 0, 61);
     }
 
     /* Modal */
@@ -1286,12 +1287,12 @@ section.active {
 
 /* bukket */
 .btn-view-bukket {
-  background-color:  #28a745;   /* biru elegan */
+  background-color:  #c0286f;   /* biru elegan */
   color: white;
 }
 
 .btn-view-bukket:hover {
-  background-color: #1e7e34;   /* biru lebih gelap saat hover */
+  background-color: #ef0070;   /* biru lebih gelap saat hover */
   transform: translateY(-2px); /* sedikit naik saat hover */
 }
 
