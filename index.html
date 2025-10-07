@@ -33,8 +33,6 @@
       </div>
       <p>📌 Lokasi Kota Batam</p>
       <span id="userAccess"></span>
-      <button onclick="showSection('ternakSection')" style="background-color: transparent; border:  1px solid rgb(255, 255, 255);">🎈Dekorasi </button>
-      <button onclick="showSection('checklistSection')" style="background-color: transparent; border:  1px solid rgb(255, 255, 255);">🎁Bakket/asset</button>
       <span id="userAccess"></span>
     </div>
   </div>
@@ -42,7 +40,7 @@
     <header class="topbar">
         <div class="breadcrumbs">
           <i class="ri-dashboard-3-line"></i>
-          <span>Projeck Hafiz</span>
+          <span style="color: #ef0070;">Projeck Hafiz</span>
         </div>
         <div class="admin">
           <span>User</span>
@@ -51,6 +49,40 @@
       </header> <br>   
       
 <main>
+   <div class="card">
+    <div class="banner-slider" id="bannerSlider">
+      <div
+        class="slide active"
+        style="background-image: url('png/WhatsApp\ Image\ 2025-09-10\ at\ 10.42.07.png');"
+      >
+        <div class="overlay">
+          <h2>Best Seller</h2>
+        </div>
+      </div>
+
+      <div
+        class="slide"
+        style="background-image: url('png/WhatsApp\ Image\ 2025-09-10\ at\ 11.01.08\ \(1\).jpeg');"
+      >
+        <div class="overlay">
+          <h2>Wisudah dan Aqiqah</h2>
+        </div>
+      </div>
+
+      <div
+        class="slide"
+        style="background-image: url('png/WhatsApp\ Image\ 2025-09-10\ at\ 11.22.50\ \(1\).jpeg');"
+      >
+        <div class="overlay">
+          <h2>Bucket dan Parsel</h2>
+        </div>
+      </div>
+
+      <div class="dots" id="dots"></div>
+    </div>
+  </div>
+      <button onclick="showSection('ternakSection')" style="background-color: transparent; border:  1px solid rgb(255, 0, 183); color: #000;">🎈Dekorasi </button>
+      <button onclick="showSection('checklistSection')" style="background-color: transparent; border:  1px solid rgb(255, 0, 183); color: #000;">🎁Bakket/asset</button>
   <!-- DAFTAR TERNAK -->
 <section id="ternakSection">
   <!-- Row Card -->
@@ -952,7 +984,7 @@
     <span class="close" onclick="closeWelcomeModal()">&times;</span>
     <h2>Selamat Datang 👋</h2>
     <p>Terima kasih sudah mengunjungi <b>Project Hafiz</b>.<br>
-       Silakan pilih produk dekorasi atau bakket sesuai Yang kamu ingin kan <br> Ayo boking dekorasi nya sekarang juga ❤</p>
+       Silakan pilih produk dekorasi atau bakket sesuai kebutuhan Anda.</p>
     <button class="btn-start" onclick="closeWelcomeModal()">Mulai Belanja</button>
   </div>
 </div>
