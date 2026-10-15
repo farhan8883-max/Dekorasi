@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dekorasi Murah</title>
+  <meta name="google-site-verification" content="DAE_kqF7lG5whTUD0zCjPcVhJDs7ZdTuFooAI99rbqg" />
+  <link rel="stylesheet" href="stylepetugas.css">
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo Data Ternak">
+      Projeck Hafiz
+    </div>
+    <div class="burger" id="burgerMenu">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <div class="menu" id="menuNav">
+      <span id="userInfo"></span>
+      <div class="admin">
+        <span class="avatar" aria-hidden="true"><i class="ri-instagram-line"></i></span>
+        <span> <a href="https://www.instagram.com/dekorasihafiz/" style="text-decoration: none; color: #ccc; gap: 1px;"> dekorasihafiz</a></span>
+        </div>
+        <div class="admin">
+          <span class="avatar" aria-hidden="true"><i class="ri-facebook-fill"></i></span>
+          <span> <a href="https://www.facebook.com/anis.khoerunisa.16" style="text-decoration: none; color: white;">anis.khoerunisa.16</a></span>
+      </div>
+      <p>📌 Lokasi Kota Batam</p>
+      <span id="userAccess"></span>
+      <span id="userAccess"></span>
+    </div>
+  </div>
+<div class="content">
+    <header class="topbar">
+        <div class="breadcrumbs">
+          <i class="ri-dashboard-3-line"></i>
+          <span style="color: #ef0070;">Projeck Hafiz</span>
+        </div>
+        <div class="admin">
+          <span>User</span>
+          <span class="avatar" aria-hidden="true"><i class="ri-user-3-line"></i></span>
+        </div>
+      </header> <br>   
+      
+<main>
+   <div class="card">
+    <div class="banner-slider" id="bannerSlider">
+      <div
+        class="slide active"
+        style="background-image: url('png/WhatsApp\ Image\ 2025-09-10\ at\ 10.42.07.png');"
+      >
+        <div class="overlay">
+          <h2>Best Seller</h2>
+        </div>
+      </div>
+
+      <div
+        class="slide"
+        style="background-image: url('png/WhatsApp\ Image\ 2025-09-10\ at\ 11.01.08\ \(1\).jpeg');"
+      >
+        <div class="overlay">
+          <h2>Wisudah dan Aqiqah</h2>
+        </div>
+      </div>
+
+      <div
+        class="slide"
+        style="background-image: url('png/WhatsApp\ Image\ 2025-09-10\ at\ 11.22.50\ \(1\).jpeg');"
+      >
+        <div class="overlay">
+          <h2>Bucket dan Parsel</h2>
+        </div>
+      </div>
+
+      <div class="dots" id="dots"></div>
+    </div>
+  </div>
+      <button onclick="showSection('ternakSection')" style="background-color: transparent; border:  1px solid rgb(255, 0, 183); color: #000;">🎈Dekorasi </button>
+      <button onclick="showSection('checklistSection')" style="background-color: transparent; border:  1px solid rgb(255, 0, 183); color: #000;">🎁Bakket/asset</button>
+  <!-- DAFTAR TERNAK -->
+<section id="ternakSection">
+  <!-- Row Card -->
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Cari produk...">
+      </div>
+  <div class="card-row" id="productList">
+    <!-- Card 1 -->
+    <div class="card">
+  <img src="png/dekor21.png" alt="Produk 1">
+  <div class="card-body">
+    <h2 class="nama">Dekorasi perpisahan (Both ungu)(1)</h2>
+    <p>Dekorasi perpisahan lengkap (both)</p>
+    <div class="harga">Rp 700.000</div>
+    <div class="btn-row">
+      <!-- Tombol pesan pakai atribut data supaya nyambung ke modal -->
+      <a href="#" 
+         class="btn btn-beli"
+         data-nama="Dekorasi perpisahan"
+         data-harga="Rp 700.000">pesan</a>
+
+      <a href="#" class="btn btn-view"
+         data-nama="Dekorasi perpisahan"
+         data-harga="Rp 700.000"
+         data-deskripsi="Dekorasi perpisahan lengkap (both)"
+         data-gambar="https://via.placeholder.com/400x250">lihat</a>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="png/dekor22.png" alt="Produk 2">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi perpisahan (Ninos) (2)</h2>
+        <p>Dekorasi perpisahan event saat di (NINOS) mendekorasi panggung</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi perpisahan"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi perpisahan event saat di (NINOS) mendekorasi panggung"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="png/deor13.jpeg" alt="Produk 3">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun (mermaid) (1)</h2>
+        <p>Dekorasi Ulang tahun bertema mermaid</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Ulang tahun bertema mermaid"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <img src="png/dekor1.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun (tema ungu) (2)</h2>
+        <p>Dekorasi Ulang tahun berwarna ungu </p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Ulang tahun berwarna ungu "
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/dekor10.jpeg" alt="Produk 5">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun (tema pink)</h2>
+        <p>Dekorasi Ulang tahun berwarna pingkki </p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Ulang tahun berwarna pinkki "
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/dekor14.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun (tema tayo) (3)</h2>
+        <p>Dekorasi Ulang tahun yang bertema tayo ini bisa di costume sesuai kamu minta tema apapun</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Ulang tahun yang bertema tayo ini bisa di costume sesuai kamu minta tema apapun"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/dekor16.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun (tema bola) (4)</h2>
+        <p>Dekorasi ulang tahun bertema bola</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi ulang tahun bertema bola"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/dekor15.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun (tema mikymouse) (5)</h2>
+        <p>Dekorasi Ulang tahun bertema mikymouse</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Ulang tahun bertema mikymouse"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/dekor17.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun (tema hello kitty) (6)</h2>
+        <p>Dekorasi Ulang tahun bertema hello kitty</p>
+        <div class="harga">Rp 900.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 900.000"
+             data-deskripsi="Dekorasi Ulang tahun bertema hello kitty"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/dekor18.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun (tema cinderela) (7)</h2>
+        <p>Dekorasi Ulang tahun bertema cinderela</p>
+        <div class="harga">Rp 900.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 900.000"
+             data-deskripsi="Dekorasi Ulang tahun bertema cinderela"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/dekor19.png" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Aqiqah (tema biru)(1)</h2>
+        <p>Dekorasi Aqiqah bertema biru</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Produk 1"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Aqiqah bertema biru"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/dekor2.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun (tema tayo2) (8)</h2>
+        <p>Dekorasi Ulang tahun</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Ulang tahun"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/dekor20.png" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi perpisahan (3)</h2>
+        <p>Dekorasi perpisahan</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi perpisahan"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi perpisahan"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 10.41.21 (1).jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Untuk pengjian</h2>
+        <p>Dekorasi Untuk pengjian</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Untuk pengjian"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Untuk pengjian"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 10.41.21 (2).png" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun Tema elsa (9)</h2>
+        <p>Dekorasi Ulang tahun Tema elsa</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun Tema elsa"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Ulang tahun Tema elsa"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 10.41.21.png" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Aqiqah (2)</h2>
+        <p>Dekorasi Aqiqah</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Aqiqah"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Aqiqah"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 10.42.07.png" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi tema (pink)</h2>
+        <p>Dekorasi tema (pink)</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi tema (pink)"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi tema (pink)"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- baru .... -->
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.00.52 (1).jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Pengajian (1)</h2>
+        <p>Dekorasi Pengajian</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Pengajian"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Pengajian"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.00.52 (2).jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun (10)</h2>
+        <p>Dekorasi Ulang tahun</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Ulang tahun"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.00.52.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi pengajian (2)</h2>
+        <p>Dekorasi pengajian</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi pengajian"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi pengajian"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.00.53 (1).jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Aqiqah (3)</h2>
+        <p>Dekorasi Aqiqah</p>
+        <div class="harga">Rp 900.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Aqiqah"
+             data-harga="Rp 900.000"
+             data-deskripsi="Dekorasi Aqiqah"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.00.54 (1).jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun (11)</h2>
+        <p>Dekorasi Ulang tahun</p>
+        <div class="harga">Rp 600.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 600.000"
+             data-deskripsi="Dekorasi Ulang tahun"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.00.54.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi perpisahan (4)</h2>
+        <p>Dekorasi perpisahan</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi perpisahan"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi perpisahan"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.00.58.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Ulang tahun (12)</h2>
+        <p>Dekorasi Ulang tahun</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Ulang tahun"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Ulang tahun"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.01.07.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Wisudah (1)</h2>
+        <p>Dekorasi  Wisudah</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi  Wisudah"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi  Wisudah"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.01.08 (1).jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi perpisahan (5)</h2>
+        <p>Dekorasi perpisahan</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi perpisahan"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi perpisahan"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+     <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.01.09.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi wisudah (2)</h2>
+        <p>Dekorasi wisudah</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi wisudah"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi wisudah"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+     <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.01.08 (2).jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi wisudah (3)</h2>
+        <p>Dekorasi wisudah</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi wisudah"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi wisudah"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+     <!-- baru lagi -->
+
+     <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.22.44.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi perpisahan (6)</h2>
+        <p>Dekorasi perpisahan</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi perpisahan"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi perpisahan"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.22.45.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi wisudah (4)</h2>
+        <p>Dekorasi wisudah</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi wisudah"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi wisudah"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.22.46 (1).jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi wisudah (5)</h2>
+        <p>Dekorasi wisudah</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi wisudah"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi wisudah"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.22.46 (2).jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi wisudah (6)</h2>
+        <p>Dekorasi wisudah</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi wisudah"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi wisudah"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.22.46.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi perpisahan (7)</h2>
+        <p>Dekorasi perpisahan</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi perpisahan"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi perpisahan"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.22.47 (1).jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Aqiqah (4)</h2>
+        <p>Dekorasi Aqiqah</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Aqiqah"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Aqiqah"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.22.47.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Aqiqah (5)</h2>
+        <p>Dekorasi Aqiqah</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Aqiqah"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Aqiqah"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.22.48.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi ulang tahun (13)</h2>
+        <p>Dekorasi ulang tahun</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi ulang tahun"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi ulang tahun"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.22.49.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi panggung</h2>
+        <p>Dekorasi panggung</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi panggung"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi panggung"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.22.52.jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Aqiqah (6)</h2>
+        <p>Dekorasi Aqiqah</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Aqiqah"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Aqiqah"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.22.51 (1).jpeg" alt="Produk 4">
+      <div class="card-body">
+        <h2 class="nama">Dekorasi Aqiqah (7)</h2>
+        <p>Dekorasi Aqiqah</p>
+        <div class="harga">Rp 700.000</div>
+        <div class="btn-row">
+          <a href="https://wa.me/6285880548049?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
+          <a href="#" class="btn btn-view"
+             data-nama="Dekorasi Aqiqah"
+             data-harga="Rp 700.000"
+             data-deskripsi="Dekorasi Aqiqah"
+             data-gambar="https://via.placeholder.com/400x250">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+  <!-- Section Detail Produk -->
+<section id="sectionDetailTernak" style="display:none; margin-top:20px; padding:15px; border-radius:8px;">
+  <h3 id="detailNama">Nama Produk</h3>
+  <img id="detailGambar" src="" alt="Produk" style="max-width:300px; border-radius:8px; margin:10px 0;">
+  <p id="detailDeskripsi"></p>
+  <h4 id="detailHarga" style="color:green;"></h4>
+  <button onclick="backToList()" style="margin-top:10px; padding:8px 15px; background:#444; color:#fff; border:none; border-radius:5px; cursor:pointer;">Kembali</button>
+</section>
+
+  </section>
+
+  <!------------------------------ bakket ---------------------------------------------------------------------------------- -->
+  <section  id="checklistSection">
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Cari produk...">
+      </div>
+    <div class="card-row" id="productListBukket">
+    <div class="card">
+      <img src="png/barang.png" alt="Produk 1">
+      <div class="card-body">
+        <h2 class="nama">Bukket makanan</h2>
+        <p>Bukket makanan / ulang tahun , costum makanan</p>
+        <div class="harga">Rp 150.000</div>
+        <div class="btn-row">
+          <a href="#" class="btn-barang" onclick="openBarangModal('Bukket makanan', 'Rp 150.000')">pesan</a>
+          <a href="#" class="btn btn-view-bukket"
+             data-nama="Bukket makan"
+             data-harga="Rp 150.000"
+             data-deskripsi="Bukket makanan costum makanan"
+             data-gambar="png/barang.png">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="png/bukket.png" alt="Produk 2">
+      <div class="card-body">
+        <h2 class="nama">Bukket uang bunga warna hitam (jasa)</h2>
+        <p>isian bisa Costume uang mainan / asli isian </p>
+        <div class="harga">Rp 100.000</div>
+        <div class="btn-row">
+          <a href="#" class="btn-barang" onclick="openBarangModal('Bukket uang bunga warna hitam', 'Rp 100.000')">pesan</a>
+          <a href="#" class="btn btn-view-bukket"
+             data-nama="Bukket uang bunga (jasa)"
+             data-harga="Rp 100.000"
+             data-deskripsi="Costume uang mainan / asli dari costumer"
+             data-gambar="png/bukket.png">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="png/bukket1.png" alt="Produk 3">
+      <div class="card-body">
+        <h2 class="nama">Bukket uang bunga tema (doraemon)(jasa)</h2>
+        <p>isian bisa Costume uang mainan / asli</p>
+        <div class="harga">Rp 100.000</div>
+        <div class="btn-row">
+          <a href="#" class="btn-barang" onclick="openBarangModal('Bukket uang bunga tema (doraemon)', 'Rp 100.000')">pesan</a>
+          <a href="#" class="btn btn-view-bukket"
+             data-nama="Bukket uang bunga (jasa)"
+             data-harga="Rp 100.000"
+             data-deskripsi="Costume uang mainan / asli dari costumer"
+             data-gambar="png/bukket1.png">lihat</a>
+        </div>
+      </div>
+    </div>
+
+     <!-- Card 3 -->
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 10.42.50.png" alt="Produk 3">
+      <div class="card-body">
+        <h2 class="nama">Snack Tower</h2>
+        <p>Snack Tower makanan anak anak</p>
+        <div class="harga">Rp 500.000</div>
+        <div class="btn-row">
+          <a href="#" class="btn-barang" onclick="openBarangModal('Snack Tower', 'Rp 500.000')">pesan</a>
+          <a href="#" class="btn btn-view-bukket"
+             data-nama="Snack Tower"
+             data-harga="Rp 500.000"
+             data-deskripsi="Costume uang mainan / asli"
+             data-gambar="png/bukket1.png">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.22.50 (1).jpeg" alt="Produk 3">
+      <div class="card-body">
+        <h2 class="nama">parcel makanan dan piring</h2>
+        <p>parcel makanan dan piring</p>
+        <div class="harga">Rp 500.000</div>
+        <div class="btn-row">
+          <a href="#" class="btn-barang" onclick="openBarangModal('parcel makanan dan piring', 'Rp 500.000')">pesan</a>
+          <a href="#" class="btn btn-view-bukket"
+             data-nama="parcel makanan dan piring"
+             data-harga="Rp 500.000"
+             data-deskripsi="parcel makanan dan piring perpaket"
+             data-gambar="png/bukket1.png">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.22.50.jpeg" alt="Produk 3">
+      <div class="card-body">
+        <h2 class="nama">Parcel makanan lebaran</h2>
+        <p>isian costume dari costumer </p>
+        <div class="harga">Rp 100.000 (jasa)</div>
+        <div class="btn-row">
+          <a href="#" class="btn-barang" onclick="openBarangModal('Parcel makanan lebaran', 'Rp 100.000')">pesan</a>
+          <a href="#" class="btn btn-view-bukket"
+             data-nama="Parcel makanan lebaran"
+             data-harga="Rp 100.000 (jasa)"
+             data-deskripsi="isian costume dari costumer"
+             data-gambar="png/bukket1.png">lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="png/WhatsApp Image 2025-09-10 at 11.22.51.jpeg" alt="Produk 3">
+      <div class="card-body">
+        <h2 class="nama">Parcel lengkap</h2>
+        <p>Parcel lengkap</p>
+        <div class="harga">Rp 250.000</div>
+        <div class="btn-row">
+          <a href="#" class="btn-barang" onclick="openBarangModal('Parcel lengkap', 'Rp 250.000')">pesan</a>
+          <a href="#" class="btn btn-view-bukket"
+             data-nama="Parcel lengkap"
+             data-harga="Rp 250.000"
+             data-deskripsi="Parcel lengkap"
+             data-gambar="png/bukket1.png">lihat</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+ <!-- Detail Produk khusus Bukket -->
+  <section id="sectionDetailBukket" style="display:none; margin-top:20px; border:1px solid #ccc; padding:15px; border-radius:8px;">
+    <h3 id="detailNamaBukket">Nama Produk</h3>
+    <img id="detailGambarBukket" src="" alt="Produk" style="max-width:300px; border-radius:8px; margin:10px 0;">
+    <p id="detailDeskripsiBukket"></p>
+    <h4 id="detailHargaBukket" style="color:green;"></h4>
+    <button onclick="backToListBukket()" style="margin-top:10px; padding:8px 15px; background:#444; color:#fff; border:none; border-radius:5px; cursor:pointer;">Kembali</button>
+  </section>
+  </section>
+
+  <section id="sectionDetailTernak" style="display:none; margin-top:20px; border:1px solid #ccc; padding:10px; border-radius:5px;">
+  <h3>Detail Ternak</h3>
+ </section>
+
+ </main>
+
+  <div class="button-container">
+  </div>
+</div>
+
+<!-- MODAL PESAN -->
+<!-- Modal Pesanan Barang -->
+<!-- Modal Pesanan Barang -->
+<div id="barangModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeBarangModal()">&times;</span>
+    <h3>Form Pesanan Barang</h3>
+
+    <form id="barangForm" onsubmit="submitBarang(event)">
+      <div class="form-group">
+        <label for="barangProduk">Produk</label>
+        <input type="text" id="barangProduk" name="produk" readonly>
+      </div>
+
+      <div class="form-group">
+        <label for="barangHarga">Harga</label>
+        <input type="text" id="barangHarga" name="harga" readonly>
+      </div>
+
+      <div class="form-group">
+        <label for="barangNama">Nama</label>
+        <input type="text" id="barangNama" name="nama" required>
+      </div>
+
+      <div class="form-group">
+        <label for="barangHP">Nomor HP</label>
+        <input type="tel" id="barangHP" name="hp" pattern="[0-9+ ]+" required>
+      </div>
+
+      <div class="form-group">
+        <label for="barangAlamat">Alamat</label>
+        <textarea id="barangAlamat" name="alamat" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="barangCatatan">Catatan</label>
+        <textarea id="barangCatatan" name="catatan"></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn-cancel" onclick="closeBarangModal()">Batal</button>
+        <button type="submit" class="btn-submit">Kirim ke WhatsApp</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Modal Selamat Datang di Sebelah Kanan -->
+<div id="welcomeModal" class="modal1">
+  <div class="modal-content1 right">
+    <span class="close" onclick="closeWelcomeModal()">&times;</span>
+    <h2>Selamat Datang 👋</h2>
+    <p>Terima kasih sudah mengunjungi <b>Project Hafiz</b>.<br>
+       Silakan pilih produk dekorasi atau bakket sesuai kebutuhan Anda.</p>
+    <button class="btn-start" onclick="closeWelcomeModal()">Mulai Belanja</button>
+  </div>
+</div>
+
+ 
+<div id="orderModal" class="modal" style="display:none;">
+  <div class="modal-content" style="max-width:500px; margin:auto; border-radius:10px;">
+    <span class="close" onclick="closeOrderModal()" style="float:right; font-size:20px; cursor:pointer;">&times;</span>
+    <h2>Form Pemesanan</h2>
+    <form id="orderForm" onsubmit="submitOrder(event)">
+  <div>
+    <label>Produk</label>
+    <input type="text" id="orderProduk" readonly>
+  </div>
+
+  <div>
+    <label>Harga</label>
+    <input type="text" id="orderHarga" readonly>
+  </div>
+
+  <div>
+    <label>Nama Lengkap</label>
+    <input type="text" id="orderNama" required>
+  </div>
+
+  <div>
+    <label>Nomor HP</label>
+    <input type="text" id="orderHP" required>
+  </div>
+
+  <div>
+    <label>Tanggal Acara</label>
+    <input type="date" id="orderTanggal" required>
+  </div>
+
+  <div id="orderAlamatWrapper">
+    <label>Alamat Acara</label>
+    <textarea id="orderAlamat" required></textarea>
+  </div>
+
+  <div id="orderCatatanWrapper">
+    <label>Catatan Tambahan</label>
+    <textarea id="orderCatatan"></textarea>
+  </div>
+
+  <div class="form-actions">
+    <button type="button" class="btn-cancel" onclick="closeOrderModal()">Batal</button>
+    <button type="submit">Kirim ke WhatsApp</button>
+  </div>
+</form>
+
+  </div>
+</div>
+</div>
+
+  <script src="petugas.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>
