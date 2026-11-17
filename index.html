@@ -82,6 +82,10 @@ h1,h2,h3,.brand{font-family:Fredoka,Poppins,sans-serif}
 .shade{position:fixed;inset:0;background:#2d1b2766;z-index:70;display:none}
 @media(max-width:900px){.side{transform:translateX(-100%)}.side.open{transform:none}.side.open+.shade{display:block}.content{margin-left:0;padding:16px 14px 110px}.burger{display:block}.grid{grid-template-columns:repeat(2,1fr);gap:12px}.body{padding:10px 11px 12px}.body h3{font-size:14px}.body p{display:none}.price{font-size:16px}.row .btn{font-size:12px}.panel{padding:14px}.slide{padding:14px}.cap{padding:9px 16px}}
 @media(max-width:600px){.welcome{left:14px;right:14px;width:auto;bottom:calc(88px + env(safe-area-inset-bottom,0px));padding:18px}.welcome h3{font-size:18px}.wa{width:54px;height:54px;right:14px}.ov{align-items:flex-end;padding:0}.box{max-width:none;border-radius:26px 26px 0 0;max-height:90vh;padding:22px 18px calc(22px + env(safe-area-inset-bottom,0px))}.tools{flex-direction:column;align-items:stretch}#q{max-width:none}.chips{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px}.chip{white-space:nowrap}}
+html,body{max-width:100%;overflow-x:hidden}.content,.panel,.tools,.top,.slider{min-width:0;max-width:100%}
+.tabs,.chips{overflow-x:auto;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scrollbar-width:none;cursor:grab}.tabs::-webkit-scrollbar,.chips::-webkit-scrollbar{display:none}.tabs{flex-wrap:nowrap}.tab,.chip{flex:none;white-space:nowrap;scroll-snap-align:start;user-select:none}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.chips{flex-wrap:nowrap;width:100%;min-width:0}.tools{flex-direction:column;align-items:stretch}#q{max-width:none;min-width:0;width:100%}.tab{padding:10px 20px}.crumb{font-size:17px}.top{padding:10px 14px}}
+@media(max-width:380px){.grid{gap:10px}.body h3{font-size:13px}.price{font-size:15px}.row .btn{font-size:11px;padding:9px 2px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -231,6 +235,7 @@ go(0);setInterval(function(){go((si+1)%sl.length)},4000);
 var wl=document.getElementById("welcome");
 setTimeout(function(){wl.classList.add("open")},700);
 document.getElementById("wx").onclick=document.getElementById("wgo").onclick=function(){wl.classList.remove("open")};
+document.querySelectorAll(".tabs,.chips").forEach(function(el){var d=0,sx=0,sl=0,mv=0;el.addEventListener("mousedown",function(e){d=1;mv=0;sx=e.pageX;sl=el.scrollLeft});window.addEventListener("mouseup",function(){d=0});el.addEventListener("mousemove",function(e){if(!d)return;var dx=e.pageX-sx;if(Math.abs(dx)>4)mv=1;el.scrollLeft=sl-dx});el.addEventListener("click",function(e){if(mv){e.stopPropagation();e.preventDefault();mv=0}},true)});
 chips();render();
 </script>
 </body>
