@@ -1,1338 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dekorasi Murah</title>
-  <meta name="google-site-verification" content="DAE_kqF7lG5whTUD0zCjPcVhJDs7ZdTuFooAI99rbqg" />
-  <link rel="stylesheet" href="stylepetugas.css">
-  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
-
-  <!-- Tambahan CSS: WhatsApp melayang dan modal custom dekorasi -->
-  <style>
-    .custom-wa-float {
-      position: fixed;
-      right: 22px;
-      bottom: 24px;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      background: #25D366;
-      color: #fff;
-      font-size: 35px;
-      text-decoration: none;
-      box-shadow: 0 5px 20px rgba(37, 211, 102, .38);
-      z-index: 9990;
-      cursor: pointer;
-      animation: customWaPulse 2s infinite;
-      transition: transform .2s, background .2s;
-    }
-
-    .custom-wa-float:hover {
-      background: #1ebe5d;
-      transform: scale(1.08);
-    }
-
-    .custom-wa-float-label {
-      position: absolute;
-      right: 72px;
-      white-space: nowrap;
-      padding: 9px 12px;
-      border-radius: 8px;
-      background: #222;
-      color: #fff;
-      font: 600 12px Arial, sans-serif;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity .2s;
-    }
-
-    .custom-wa-float:hover .custom-wa-float-label {
-      opacity: 1;
-    }
-
-    @keyframes customWaPulse {
-      0%, 100% { box-shadow: 0 5px 20px rgba(37, 211, 102, .32); }
-      50% { box-shadow: 0 5px 27px rgba(37, 211, 102, .65); }
-    }
-
-    .custom-wa-overlay {
-      position: fixed;
-      inset: 0;
-      z-index: 10001;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      background: rgba(0, 0, 0, .58);
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-      transition: opacity .25s, visibility .25s;
-    }
-
-    .custom-wa-overlay.is-open {
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
-    }
-
-    .custom-wa-dialog {
-      position: relative;
-      width: 100%;
-      max-width: 390px;
-      box-sizing: border-box;
-      padding: 32px 25px 24px;
-      border-radius: 20px;
-      background: #fff;
-      color: #222;
-      text-align: center;
-      box-shadow: 0 15px 50px rgba(0, 0, 0, .25);
-      transform: translateY(12px);
-      transition: transform .25s;
-    }
-
-    .custom-wa-overlay.is-open .custom-wa-dialog {
-      transform: translateY(0);
-    }
-
-    .custom-wa-close {
-      position: absolute;
-      top: 8px;
-      right: 13px;
-      border: 0;
-      background: transparent;
-      color: #777;
-      font-size: 30px;
-      line-height: 1;
-      cursor: pointer;
-    }
-
-    .custom-wa-badge {
-      width: 76px;
-      height: 76px;
-      margin: 0 auto 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      background: #e8fff0;
-      color: #25D366;
-      font-size: 48px;
-    }
-
-    .custom-wa-dialog h2 {
-      margin: 0 0 12px;
-      font-size: 22px;
-      line-height: 1.4;
-    }
-
-    .custom-wa-dialog p {
-      margin: 0 0 22px;
-      color: #666;
-      font-size: 14px;
-      line-height: 1.8;
-    }
-
-    .custom-wa-chat {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 9px;
-      width: 100%;
-      box-sizing: border-box;
-      padding: 13px 16px;
-      border-radius: 10px;
-      background: #25D366;
-      color: #fff;
-      font-size: 15px;
-      font-weight: 700;
-      text-decoration: none;
-      transition: background .2s;
-    }
-
-    .custom-wa-chat:hover {
-      background: #1ebe5d;
-    }
-
-    .custom-wa-chat i {
-      font-size: 23px;
-    }
-
-    .custom-wa-dismiss {
-      margin-top: 10px;
-      padding: 10px 15px;
-      border: 0;
-      background: transparent;
-      color: #777;
-      cursor: pointer;
-      font-size: 13px;
-    }
-
-    @media (max-width: 480px) {
-      .custom-wa-float {
-        right: 16px;
-        bottom: 18px;
-        width: 55px;
-        height: 55px;
-        font-size: 32px;
-      }
-
-      .custom-wa-float-label {
-        display: none;
-      }
-
-      .custom-wa-dialog {
-        padding: 30px 20px 20px;
-      }
-
-      .custom-wa-dialog h2 {
-        font-size: 20px;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .custom-wa-float { animation: none; }
-      .custom-wa-overlay, .custom-wa-dialog { transition: none; }
-    }
-  </style>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projeck Hafiz – Dekorasi &amp; Bakket Cantik di Batam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff4f9;--card:#fff;--ink:#2d1b27;--mute:#7d6672;--pink:#ef0070;--pink2:#ff7ab8;--soft:#ffe3ef;--line:#f6d3e2;--shadow:0 10px 30px rgba(239,0,112,.12);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1219;--card:#2a1b25;--ink:#fbeaf3;--mute:#c4a6b6;--soft:#3a2230;--line:#4a2d3d;--shadow:0 10px 30px rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg:#1c1219;--card:#2a1b25;--ink:#fbeaf3;--mute:#c4a6b6;--soft:#3a2230;--line:#4a2d3d;--shadow:0 10px 30px rgba(0,0,0,.4)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 Poppins,Arial,sans-serif}
+h1,h2,h3,.brand{font-family:Fredoka,Poppins,sans-serif}
+.side{position:fixed;left:0;top:0;bottom:0;width:280px;z-index:80;color:#fff;padding:26px 20px;overflow:hidden;background:linear-gradient(170deg,#ef0070 0%,#ff3d94 60%,#ff7ab8 100%);display:flex;flex-direction:column;transition:transform .3s}
+.side:before,.side:after{content:"";position:absolute;border-radius:50%;background:#ffffff1f}
+.side:before{width:220px;height:220px;right:-90px;bottom:60px}.side:after{width:150px;height:150px;left:-60px;bottom:-40px}
+.logo{display:flex;align-items:center;gap:12px;margin-bottom:26px;position:relative}
+.lg{width:54px;height:54px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;overflow:hidden;box-shadow:0 6px 16px #0003;position:relative;flex:none}
+.lg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.brand{font-size:23px;font-weight:700;line-height:1.1}.logo small{display:block;font:400 12px Poppins;opacity:.85}
+.side a{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;padding:13px 16px;border-radius:16px;margin-bottom:8px;background:#ffffff1c;font-weight:500;position:relative;transition:.2s}
+.side a:hover{background:#ffffff38;transform:translateX(5px)}
+.side a span{font-size:19px;width:24px;text-align:center}
+.side .foot{margin-top:auto;font-size:12px;opacity:.85;position:relative}
+.content{margin-left:280px;padding:22px 30px 110px}
+.top{display:flex;align-items:center;justify-content:space-between;background:var(--card);border-radius:20px;padding:14px 22px;box-shadow:var(--shadow);margin-bottom:22px}
+.crumb{display:flex;align-items:center;gap:10px;color:var(--pink);font:600 19px Fredoka}
+.burger{display:none;border:0;background:var(--soft);color:var(--pink);font-size:22px;width:40px;height:40px;border-radius:12px;cursor:pointer}
+.user{display:flex;align-items:center;gap:10px;font-weight:600}
+.av{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--pink2));display:flex;align-items:center;justify-content:center;color:#fff}
+.slider{position:relative;border-radius:28px;overflow:hidden;height:min(46vw,420px);min-height:210px;border:4px solid var(--pink2);box-shadow:var(--shadow)}
+.slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity .9s;display:flex;align-items:flex-end;padding:26px}
+.slide.on{opacity:1}
+.cap{background:#2d1b27a8;backdrop-filter:blur(6px);color:#fff;padding:12px 24px;border-radius:18px}
+.cap h2{margin:0;font-size:clamp(20px,3.4vw,34px)}.cap p{margin:0;font-size:13px;opacity:.9}
+.dots{position:absolute;bottom:14px;right:22px;display:flex;gap:7px}.dots i{width:10px;height:10px;border-radius:50%;background:#fff8;cursor:pointer}.dots i.on{background:#fff;width:26px;border-radius:9px}
+.tabs{display:flex;gap:10px;margin:22px 0 14px;flex-wrap:wrap}
+.tab{border:2px solid var(--pink2);background:var(--card);color:var(--ink);font:600 14px Poppins;padding:11px 24px;border-radius:99px;cursor:pointer;transition:.2s}
+.tab.on{background:linear-gradient(135deg,var(--pink),var(--pink2));color:#fff;border-color:transparent;box-shadow:var(--shadow)}
+.panel{background:var(--card);border-radius:26px;padding:22px;box-shadow:var(--shadow)}
+.tools{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:22px}
+#q{flex:1;min-width:220px;max-width:420px;padding:13px 20px;border-radius:99px;border:2px solid var(--pink2);background:var(--bg);color:var(--ink);font:14px Poppins;outline:0}
+#q:focus{border-color:var(--pink)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:0;background:var(--soft);color:var(--pink);padding:8px 16px;border-radius:99px;font:500 13px Poppins;cursor:pointer}.chip.on{background:var(--pink);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:.25s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.thumb{position:relative;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:56px;cursor:pointer;overflow:hidden}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.4s}.card:hover .thumb img{transform:scale(1.07)}
+.badge{position:absolute;top:10px;left:10px;background:#fffe;color:var(--pink);font:600 11px Poppins;padding:4px 11px;border-radius:99px;z-index:2}
+.body{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1}
+.body h3{font-size:16px;margin:0 0 3px;line-height:1.3}.body p{margin:0 0 10px;color:var(--mute);font-size:13px;flex:1}
+.price{font:700 19px Fredoka;color:var(--pink);margin-bottom:10px}
+.btn{display:inline-block;border:0;cursor:pointer;font:600 13px Poppins,sans-serif;padding:11px 18px;border-radius:99px;text-decoration:none;transition:.2s;text-align:center}
+.btn.main{background:linear-gradient(135deg,var(--pink),var(--pink2));color:#fff;box-shadow:0 8px 18px rgba(239,0,112,.28)}
+.btn.ghost{background:var(--card);color:var(--pink);border:2px solid var(--pink2)}
+.btn:hover{transform:translateY(-2px)}
+.row{display:flex;gap:8px}.row .btn{flex:1;padding:10px 6px}
+.empty{text-align:center;color:var(--mute);padding:40px;display:none}
+.ov{position:fixed;inset:0;z-index:100;background:rgba(40,10,30,.55);display:flex;align-items:center;justify-content:center;padding:18px;opacity:0;visibility:hidden;transition:.25s}
+.ov.open{opacity:1;visibility:visible}
+.box{background:var(--card);border-radius:26px;width:100%;max-width:440px;max-height:92vh;overflow:auto;padding:26px;position:relative;transform:translateY(14px);transition:.25s}
+.ov.open .box{transform:none}.box h3{font-size:24px;margin:0 0 12px}
+.x{position:absolute;top:10px;right:14px;border:0;background:none;font-size:28px;color:var(--mute);cursor:pointer;z-index:3}
+.box label{display:block;font-size:12px;font-weight:600;margin:10px 0 4px;color:var(--mute)}
+.box input,.box textarea{width:100%;padding:11px 14px;border-radius:14px;border:2px solid var(--line);background:var(--bg);color:var(--ink);font:14px Poppins;outline:0}
+.box input:focus,.box textarea:focus{border-color:var(--pink2)}.box input[readonly]{background:var(--soft)}
+.dimg{aspect-ratio:4/3;border-radius:18px;margin-bottom:12px;display:flex;align-items:center;justify-content:center;font-size:70px;position:relative;overflow:hidden}
+.dimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.acts{display:flex;gap:8px;margin-top:16px}.acts .btn{flex:1}
+.welcome{position:fixed;right:20px;bottom:calc(92px + env(safe-area-inset-bottom,0px));z-index:70;width:min(330px,calc(100vw - 40px));background:var(--card);border-radius:22px;padding:22px;box-shadow:0 14px 44px rgba(239,0,112,.28);border:2px solid var(--pink2);transform:translateY(20px);opacity:0;visibility:hidden;transition:.4s}
+.welcome.open{transform:none;opacity:1;visibility:visible}
+.welcome h3{margin:0 0 6px;font-size:21px}.welcome p{margin:0 0 14px;color:var(--mute);font-size:13px}
+.welcome .x{top:6px;right:12px;font-size:24px}
+.wa{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:75;width:60px;height:60px;border-radius:50%;background:#25d366;color:#fff;border:0;font-size:28px;cursor:pointer;animation:pulse 2s infinite}
+.wa i{position:absolute;right:72px;white-space:nowrap;background:#2d1b27;color:#fff;font:600 12px Poppins;padding:8px 12px;border-radius:10px;opacity:0;pointer-events:none;transition:.2s;font-style:normal;top:14px}
+.wa:hover i{opacity:1}
+@keyframes pulse{0%,100%{box-shadow:0 6px 20px rgba(37,211,102,.4)}50%{box-shadow:0 6px 32px rgba(37,211,102,.85)}}
+.shade{position:fixed;inset:0;background:#2d1b2766;z-index:70;display:none}
+@media(max-width:900px){.side{transform:translateX(-100%)}.side.open{transform:none}.side.open+.shade{display:block}.content{margin-left:0;padding:16px 14px 110px}.burger{display:block}.grid{grid-template-columns:repeat(2,1fr);gap:12px}.body{padding:10px 11px 12px}.body h3{font-size:14px}.body p{display:none}.price{font-size:16px}.row .btn{font-size:12px}.panel{padding:14px}.slide{padding:14px}.cap{padding:9px 16px}}
+@media(max-width:600px){.welcome{left:14px;right:14px;width:auto;bottom:calc(88px + env(safe-area-inset-bottom,0px));padding:18px}.welcome h3{font-size:18px}.wa{width:54px;height:54px;right:14px}.ov{align-items:flex-end;padding:0}.box{max-width:none;border-radius:26px 26px 0 0;max-height:90vh;padding:22px 18px calc(22px + env(safe-area-inset-bottom,0px))}.tools{flex-direction:column;align-items:stretch}#q{max-width:none}.chips{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px}.chip{white-space:nowrap}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
 </head>
 <body>
+<aside class="side" id="side">
+  <div class="logo"><div class="lg">🎈<img src="logo.png" alt="" onerror="this.remove()"></div><div><div class="brand">Projeck Hafiz</div><small>Dekorasi &amp; Bakket Cantik</small></div></div>
+  <a href="https://www.instagram.com/dekorasihafiz/" target="_blank" rel="noopener"><span>📸</span>dekorasihafiz</a>
+  <a href="https://www.facebook.com/anis.khoerunisa.16" target="_blank" rel="noopener"><span>💙</span>anis.khoerunisa.16</a>
+  <a href="#" id="lokasi"><span>📍</span>Lokasi Kota Batam</a>
+  <a href="https://wa.me/6285271106448?text=Halo%20Dekorasi%20Hafiz%2C%20saya%20ingin%20bertanya%20tentang%20custom%20dekorasi.%20Boleh%20konsultasi%3F" target="_blank" rel="noopener"><span>🎨</span>Custom Dekorasi</a>
+  <div class="foot">© 2026 Projeck Hafiz<br>Dibuat dengan 💗</div>
+</aside>
+<div class="shade" id="shade"></div>
 
-  <!-- NAVBAR -->
-  <div class="navbar">
-    <div class="logo">
-      <img src="logo.png" alt="Logo Data Ternak">
-      Projeck Hafiz
-    </div>
-    <div class="burger" id="burgerMenu">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-    <div class="menu" id="menuNav">
-      <span id="userInfo"></span>
-      <div class="admin">
-        <span class="avatar" aria-hidden="true"><i class="ri-instagram-line"></i></span>
-        <span> <a href="https://www.instagram.com/dekorasihafiz/" style="text-decoration: none; color: #ccc; gap: 1px;"> dekorasihafiz</a></span>
-        </div>
-        <div class="admin">
-          <span class="avatar" aria-hidden="true"><i class="ri-facebook-fill"></i></span>
-          <span> <a href="https://www.facebook.com/anis.khoerunisa.16" style="text-decoration: none; color: white;">anis.khoerunisa.16</a></span>
-      </div>
-      <p>📌 Lokasi Kota Batam</p>
-      <span id="userAccess"></span>
-      <span id="userAccess"></span>
-    </div>
-  </div>
 <div class="content">
-    <header class="topbar">
-        <div class="breadcrumbs">
-          <i class="ri-dashboard-3-line"></i>
-          <span style="color: #ef0070;">Projeck Hafiz</span>
-        </div>
-        <div class="admin">
-          <span>User</span>
-          <span class="avatar" aria-hidden="true"><i class="ri-user-3-line"></i></span>
-        </div>
-      </header> <br>   
-      
-<main>
-   <div class="card">
-    <div class="banner-slider" id="bannerSlider">
-      <div
-        class="slide active"
-        style="background-image: url('png/WhatsApp\ Image\ 2025-09-10\ at\ 10.42.07.png');"
-      >
-        <div class="overlay">
-          <h2>Best Seller</h2>
-        </div>
-      </div>
+  <header class="top">
+    <div class="crumb"><button class="burger" id="burger" aria-label="Menu">☰</button><span>🎈 Projeck Hafiz</span></div>
+    <div class="user"><span>User</span><span class="av">👤</span></div>
+  </header>
 
-      <div
-        class="slide"
-        style="background-image: url('png/WhatsApp\ Image\ 2025-09-10\ at\ 11.01.08\ \(1\).jpeg');"
-      >
-        <div class="overlay">
-          <h2>Wisudah dan Aqiqah</h2>
-        </div>
-      </div>
+  <div class="slider" id="slider"><div class="dots" id="dots"></div></div>
 
-      <div
-        class="slide"
-        style="background-image: url('png/WhatsApp\ Image\ 2025-09-10\ at\ 11.22.50\ \(1\).jpeg');"
-      >
-        <div class="overlay">
-          <h2>Bucket dan Parsel</h2>
-        </div>
-      </div>
+  <div class="tabs"><button class="tab on" data-t="dekor">🎈 Dekorasi</button><button class="tab" data-t="bakket">🎁 Bakket/asset</button></div>
 
-      <div class="dots" id="dots"></div>
-    </div>
-  </div>
-      <button onclick="showSection('ternakSection')" style="background-color: transparent; border:  1px solid rgb(255, 0, 183); color: #000;">🎈Dekorasi </button>
-      <button onclick="showSection('checklistSection')" style="background-color: transparent; border:  1px solid rgb(255, 0, 183); color: #000;">🎁Bakket/asset</button>
-  <!-- DAFTAR TERNAK -->
-<section id="ternakSection">
-  <!-- Row Card -->
-    <div class="search-box">
-        <input type="text" id="searchInput" placeholder="Cari produk...">
-      </div>
-  <div class="card-row" id="productList">
-    <!-- Card 1 -->
-    <div class="card">
-  <img src="png/dekor21.png" alt="Produk 1">
-  <div class="card-body">
-    <h2 class="nama">Dekorasi perpisahan (Both ungu)(1)</h2>
-    <p>Dekorasi perpisahan lengkap (both)</p>
-    <div class="harga">Rp 700.000</div>
-    <div class="btn-row">
-      <!-- Tombol pesan pakai atribut data supaya nyambung ke modal -->
-      <a href="#" 
-         class="btn btn-beli"
-         data-nama="Dekorasi perpisahan"
-         data-harga="Rp 700.000">pesan</a>
-
-      <a href="#" class="btn btn-view"
-         data-nama="Dekorasi perpisahan"
-         data-harga="Rp 700.000"
-         data-deskripsi="Dekorasi perpisahan lengkap (both)"
-         data-gambar="https://via.placeholder.com/400x250">lihat</a>
-    </div>
+  <div class="panel">
+    <div class="tools"><input id="q" type="search" placeholder="🔍 Cari produk..."><div class="chips" id="chips"></div></div>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty">Yah, produknya belum ketemu 🥺 Coba kata kunci lain ya.</div>
   </div>
 </div>
 
-
-    <!-- Card 2 -->
-    <div class="card">
-      <img src="png/dekor22.png" alt="Produk 2">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi perpisahan (Ninos) (2)</h2>
-        <p>Dekorasi perpisahan event saat di (NINOS) mendekorasi panggung</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi perpisahan"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi perpisahan event saat di (NINOS) mendekorasi panggung"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="card">
-      <img src="png/deor13.jpeg" alt="Produk 3">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Ulang tahun (mermaid) (1)</h2>
-        <p>Dekorasi Ulang tahun bertema mermaid</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Ulang tahun"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi Ulang tahun bertema mermaid"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="card">
-      <img src="png/dekor1.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Ulang tahun (tema ungu) (2)</h2>
-        <p>Dekorasi Ulang tahun berwarna ungu </p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Ulang tahun"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi Ulang tahun berwarna ungu "
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/dekor10.jpeg" alt="Produk 5">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Ulang tahun (tema pink)</h2>
-        <p>Dekorasi Ulang tahun berwarna pingkki </p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Ulang tahun"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi Ulang tahun berwarna pinkki "
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/dekor14.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Ulang tahun (tema tayo) (3)</h2>
-        <p>Dekorasi Ulang tahun yang bertema tayo ini bisa di costume sesuai kamu minta tema apapun</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Ulang tahun"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi Ulang tahun yang bertema tayo ini bisa di costume sesuai kamu minta tema apapun"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/dekor16.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Ulang tahun (tema bola) (4)</h2>
-        <p>Dekorasi ulang tahun bertema bola</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Ulang tahun"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi ulang tahun bertema bola"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/dekor15.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Ulang tahun (tema mikymouse) (5)</h2>
-        <p>Dekorasi Ulang tahun bertema mikymouse</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Ulang tahun"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi Ulang tahun bertema mikymouse"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/dekor17.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Ulang tahun (tema hello kitty) (6)</h2>
-        <p>Dekorasi Ulang tahun bertema hello kitty</p>
-        <div class="harga">Rp 900.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Ulang tahun"
-             data-harga="Rp 900.000"
-             data-deskripsi="Dekorasi Ulang tahun bertema hello kitty"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/dekor18.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Ulang tahun (tema cinderela) (7)</h2>
-        <p>Dekorasi Ulang tahun bertema cinderela</p>
-        <div class="harga">Rp 900.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Ulang tahun"
-             data-harga="Rp 900.000"
-             data-deskripsi="Dekorasi Ulang tahun bertema cinderela"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/dekor19.png" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Aqiqah (tema biru)(1)</h2>
-        <p>Dekorasi Aqiqah bertema biru</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Produk 1"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi Aqiqah bertema biru"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/dekor2.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Ulang tahun (tema tayo2) (8)</h2>
-        <p>Dekorasi Ulang tahun</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Ulang tahun"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi Ulang tahun"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/dekor20.png" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi perpisahan (3)</h2>
-        <p>Dekorasi perpisahan</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi perpisahan"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi perpisahan"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 10.41.21 (1).jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Untuk pengjian</h2>
-        <p>Dekorasi Untuk pengjian</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Untuk pengjian"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi Untuk pengjian"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 10.41.21 (2).png" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Ulang tahun Tema elsa (9)</h2>
-        <p>Dekorasi Ulang tahun Tema elsa</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Ulang tahun Tema elsa"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi Ulang tahun Tema elsa"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 10.41.21.png" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Aqiqah (2)</h2>
-        <p>Dekorasi Aqiqah</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Aqiqah"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi Aqiqah"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 10.42.07.png" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi tema (pink)</h2>
-        <p>Dekorasi tema (pink)</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi tema (pink)"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi tema (pink)"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- baru .... -->
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.00.52 (1).jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Pengajian (1)</h2>
-        <p>Dekorasi Pengajian</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Pengajian"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi Pengajian"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.00.52 (2).jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Ulang tahun (10)</h2>
-        <p>Dekorasi Ulang tahun</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Ulang tahun"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi Ulang tahun"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.00.52.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi pengajian (2)</h2>
-        <p>Dekorasi pengajian</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi pengajian"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi pengajian"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.00.53 (1).jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Aqiqah (3)</h2>
-        <p>Dekorasi Aqiqah</p>
-        <div class="harga">Rp 900.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Aqiqah"
-             data-harga="Rp 900.000"
-             data-deskripsi="Dekorasi Aqiqah"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.00.54 (1).jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Ulang tahun (11)</h2>
-        <p>Dekorasi Ulang tahun</p>
-        <div class="harga">Rp 600.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Ulang tahun"
-             data-harga="Rp 600.000"
-             data-deskripsi="Dekorasi Ulang tahun"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.00.54.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi perpisahan (4)</h2>
-        <p>Dekorasi perpisahan</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi perpisahan"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi perpisahan"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.00.58.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Ulang tahun (12)</h2>
-        <p>Dekorasi Ulang tahun</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Ulang tahun"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi Ulang tahun"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.01.07.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Wisudah (1)</h2>
-        <p>Dekorasi  Wisudah</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi  Wisudah"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi  Wisudah"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.01.08 (1).jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi perpisahan (5)</h2>
-        <p>Dekorasi perpisahan</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi perpisahan"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi perpisahan"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-     <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.01.09.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi wisudah (2)</h2>
-        <p>Dekorasi wisudah</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi wisudah"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi wisudah"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-     <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.01.08 (2).jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi wisudah (3)</h2>
-        <p>Dekorasi wisudah</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi wisudah"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi wisudah"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-     <!-- baru lagi -->
-
-     <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.22.44.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi perpisahan (6)</h2>
-        <p>Dekorasi perpisahan</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi perpisahan"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi perpisahan"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.22.45.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi wisudah (4)</h2>
-        <p>Dekorasi wisudah</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi wisudah"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi wisudah"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.22.46 (1).jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi wisudah (5)</h2>
-        <p>Dekorasi wisudah</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi wisudah"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi wisudah"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.22.46 (2).jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi wisudah (6)</h2>
-        <p>Dekorasi wisudah</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi wisudah"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi wisudah"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.22.46.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi perpisahan (7)</h2>
-        <p>Dekorasi perpisahan</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi perpisahan"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi perpisahan"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.22.47 (1).jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Aqiqah (4)</h2>
-        <p>Dekorasi Aqiqah</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Aqiqah"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi Aqiqah"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.22.47.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Aqiqah (5)</h2>
-        <p>Dekorasi Aqiqah</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Aqiqah"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi Aqiqah"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.22.48.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi ulang tahun (13)</h2>
-        <p>Dekorasi ulang tahun</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi ulang tahun"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi ulang tahun"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.22.49.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi panggung</h2>
-        <p>Dekorasi panggung</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi panggung"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi panggung"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.22.52.jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Aqiqah (6)</h2>
-        <p>Dekorasi Aqiqah</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Aqiqah"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi Aqiqah"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.22.51 (1).jpeg" alt="Produk 4">
-      <div class="card-body">
-        <h2 class="nama">Dekorasi Aqiqah (7)</h2>
-        <p>Dekorasi Aqiqah</p>
-        <div class="harga">Rp 700.000</div>
-        <div class="btn-row">
-          <a href="https://wa.me/6285271106448?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh...%20saya%20ingin%20pesan%20dekorasi%20ini" class="btn btn-beli">pesan</a>
-          <a href="#" class="btn btn-view"
-             data-nama="Dekorasi Aqiqah"
-             data-harga="Rp 700.000"
-             data-deskripsi="Dekorasi Aqiqah"
-             data-gambar="https://via.placeholder.com/400x250">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    
-  </div>
-  <!-- Section Detail Produk -->
-<section id="sectionDetailTernak" style="display:none; margin-top:20px; padding:15px; border-radius:8px;">
-  <h3 id="detailNama">Nama Produk</h3>
-  <img id="detailGambar" src="" alt="Produk" style="max-width:300px; border-radius:8px; margin:10px 0;">
-  <p id="detailDeskripsi"></p>
-  <h4 id="detailHarga" style="color:green;"></h4>
-  <button onclick="backToList()" style="margin-top:10px; padding:8px 15px; background:#444; color:#fff; border:none; border-radius:5px; cursor:pointer;">Kembali</button>
-</section>
-
-  </section>
-
-  <!------------------------------ bakket ---------------------------------------------------------------------------------- -->
-  <section  id="checklistSection">
-    <div class="search-box">
-        <input type="text" id="searchInput" placeholder="Cari produk...">
-      </div>
-    <div class="card-row" id="productListBukket">
-    <div class="card">
-      <img src="png/barang.png" alt="Produk 1">
-      <div class="card-body">
-        <h2 class="nama">Bukket makanan</h2>
-        <p>Bukket makanan / ulang tahun , costum makanan</p>
-        <div class="harga">Rp 150.000</div>
-        <div class="btn-row">
-          <a href="#" class="btn-barang" onclick="openBarangModal('Bukket makanan', 'Rp 150.000')">pesan</a>
-          <a href="#" class="btn btn-view-bukket"
-             data-nama="Bukket makan"
-             data-harga="Rp 150.000"
-             data-deskripsi="Bukket makanan costum makanan"
-             data-gambar="png/barang.png">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="card">
-      <img src="png/bukket.png" alt="Produk 2">
-      <div class="card-body">
-        <h2 class="nama">Bukket uang bunga warna hitam (jasa)</h2>
-        <p>isian bisa Costume uang mainan / asli isian </p>
-        <div class="harga">Rp 100.000</div>
-        <div class="btn-row">
-          <a href="#" class="btn-barang" onclick="openBarangModal('Bukket uang bunga warna hitam', 'Rp 100.000')">pesan</a>
-          <a href="#" class="btn btn-view-bukket"
-             data-nama="Bukket uang bunga (jasa)"
-             data-harga="Rp 100.000"
-             data-deskripsi="Costume uang mainan / asli dari costumer"
-             data-gambar="png/bukket.png">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="card">
-      <img src="png/bukket1.png" alt="Produk 3">
-      <div class="card-body">
-        <h2 class="nama">Bukket uang bunga tema (doraemon)(jasa)</h2>
-        <p>isian bisa Costume uang mainan / asli</p>
-        <div class="harga">Rp 100.000</div>
-        <div class="btn-row">
-          <a href="#" class="btn-barang" onclick="openBarangModal('Bukket uang bunga tema (doraemon)', 'Rp 100.000')">pesan</a>
-          <a href="#" class="btn btn-view-bukket"
-             data-nama="Bukket uang bunga (jasa)"
-             data-harga="Rp 100.000"
-             data-deskripsi="Costume uang mainan / asli dari costumer"
-             data-gambar="png/bukket1.png">lihat</a>
-        </div>
-      </div>
-    </div>
-
-     <!-- Card 3 -->
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 10.42.50.png" alt="Produk 3">
-      <div class="card-body">
-        <h2 class="nama">Snack Tower</h2>
-        <p>Snack Tower makanan anak anak</p>
-        <div class="harga">Rp 500.000</div>
-        <div class="btn-row">
-          <a href="#" class="btn-barang" onclick="openBarangModal('Snack Tower', 'Rp 500.000')">pesan</a>
-          <a href="#" class="btn btn-view-bukket"
-             data-nama="Snack Tower"
-             data-harga="Rp 500.000"
-             data-deskripsi="Costume uang mainan / asli"
-             data-gambar="png/bukket1.png">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.22.50 (1).jpeg" alt="Produk 3">
-      <div class="card-body">
-        <h2 class="nama">parcel makanan dan piring</h2>
-        <p>parcel makanan dan piring</p>
-        <div class="harga">Rp 500.000</div>
-        <div class="btn-row">
-          <a href="#" class="btn-barang" onclick="openBarangModal('parcel makanan dan piring', 'Rp 500.000')">pesan</a>
-          <a href="#" class="btn btn-view-bukket"
-             data-nama="parcel makanan dan piring"
-             data-harga="Rp 500.000"
-             data-deskripsi="parcel makanan dan piring perpaket"
-             data-gambar="png/bukket1.png">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.22.50.jpeg" alt="Produk 3">
-      <div class="card-body">
-        <h2 class="nama">Parcel makanan lebaran</h2>
-        <p>isian costume dari costumer </p>
-        <div class="harga">Rp 100.000 (jasa)</div>
-        <div class="btn-row">
-          <a href="#" class="btn-barang" onclick="openBarangModal('Parcel makanan lebaran', 'Rp 100.000')">pesan</a>
-          <a href="#" class="btn btn-view-bukket"
-             data-nama="Parcel makanan lebaran"
-             data-harga="Rp 100.000 (jasa)"
-             data-deskripsi="isian costume dari costumer"
-             data-gambar="png/bukket1.png">lihat</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="png/WhatsApp Image 2025-09-10 at 11.22.51.jpeg" alt="Produk 3">
-      <div class="card-body">
-        <h2 class="nama">Parcel lengkap</h2>
-        <p>Parcel lengkap</p>
-        <div class="harga">Rp 250.000</div>
-        <div class="btn-row">
-          <a href="#" class="btn-barang" onclick="openBarangModal('Parcel lengkap', 'Rp 250.000')">pesan</a>
-          <a href="#" class="btn btn-view-bukket"
-             data-nama="Parcel lengkap"
-             data-harga="Rp 250.000"
-             data-deskripsi="Parcel lengkap"
-             data-gambar="png/bukket1.png">lihat</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
- <!-- Detail Produk khusus Bukket -->
-  <section id="sectionDetailBukket" style="display:none; margin-top:20px; border:1px solid #ccc; padding:15px; border-radius:8px;">
-    <h3 id="detailNamaBukket">Nama Produk</h3>
-    <img id="detailGambarBukket" src="" alt="Produk" style="max-width:300px; border-radius:8px; margin:10px 0;">
-    <p id="detailDeskripsiBukket"></p>
-    <h4 id="detailHargaBukket" style="color:green;"></h4>
-    <button onclick="backToListBukket()" style="margin-top:10px; padding:8px 15px; background:#444; color:#fff; border:none; border-radius:5px; cursor:pointer;">Kembali</button>
-  </section>
-  </section>
-
-  <section id="sectionDetailTernak" style="display:none; margin-top:20px; border:1px solid #ccc; padding:10px; border-radius:5px;">
-  <h3>Detail Ternak</h3>
- </section>
-
- </main>
-
-  <div class="button-container">
-  </div>
-</div>
-
-<!-- MODAL PESAN -->
-<!-- Modal Pesanan Barang -->
-<!-- Modal Pesanan Barang -->
-<div id="barangModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeBarangModal()">&times;</span>
-    <h3>Form Pesanan Barang</h3>
-
-    <form id="barangForm" onsubmit="submitBarang(event)">
-      <div class="form-group">
-        <label for="barangProduk">Produk</label>
-        <input type="text" id="barangProduk" name="produk" readonly>
-      </div>
-
-      <div class="form-group">
-        <label for="barangHarga">Harga</label>
-        <input type="text" id="barangHarga" name="harga" readonly>
-      </div>
-
-      <div class="form-group">
-        <label for="barangNama">Nama</label>
-        <input type="text" id="barangNama" name="nama" required>
-      </div>
-
-      <div class="form-group">
-        <label for="barangHP">Nomor HP</label>
-        <input type="tel" id="barangHP" name="hp" pattern="[0-9+ ]+" required>
-      </div>
-
-      <div class="form-group">
-        <label for="barangAlamat">Alamat</label>
-        <textarea id="barangAlamat" name="alamat" required></textarea>
-      </div>
-
-      <div class="form-group">
-        <label for="barangCatatan">Catatan</label>
-        <textarea id="barangCatatan" name="catatan"></textarea>
-      </div>
-
-      <div class="form-actions">
-        <button type="button" class="btn-cancel" onclick="closeBarangModal()">Batal</button>
-        <button type="submit" class="btn-submit">Kirim ke WhatsApp</button>
-      </div>
-    </form>
-  </div>
-</div>
-
-<!-- Modal Selamat Datang di Sebelah Kanan -->
-<div id="welcomeModal" class="modal1">
-  <div class="modal-content1 right">
-    <span class="close" onclick="closeWelcomeModal()">&times;</span>
-    <h2>Selamat Datang 👋</h2>
-    <p>Terima kasih sudah mengunjungi <b>Project Hafiz</b>.<br>
-       Silakan pilih produk dekorasi atau bakket sesuai kebutuhan Anda.</p>
-    <button class="btn-start" onclick="closeWelcomeModal()">Mulai Belanja</button>
-  </div>
-</div>
-
- 
-<div id="orderModal" class="modal" style="display:none;">
-  <div class="modal-content" style="max-width:500px; margin:auto; border-radius:10px;">
-    <span class="close" onclick="closeOrderModal()" style="float:right; font-size:20px; cursor:pointer;">&times;</span>
-    <h2>Form Pemesanan</h2>
-    <form id="orderForm" onsubmit="submitOrder(event)">
-  <div>
-    <label>Produk</label>
-    <input type="text" id="orderProduk" readonly>
-  </div>
-
-  <div>
-    <label>Harga</label>
-    <input type="text" id="orderHarga" readonly>
-  </div>
-
-  <div>
-    <label>Nama Lengkap</label>
-    <input type="text" id="orderNama" required>
-  </div>
-
-  <div>
-    <label>Nomor HP</label>
-    <input type="text" id="orderHP" required>
-  </div>
-
-  <div>
-    <label>Tanggal Acara</label>
-    <input type="date" id="orderTanggal" required>
-  </div>
-
-  <div id="orderAlamatWrapper">
-    <label>Alamat Acara</label>
-    <textarea id="orderAlamat" required></textarea>
-  </div>
-
-  <div id="orderCatatanWrapper">
-    <label>Catatan Tambahan</label>
-    <textarea id="orderCatatan"></textarea>
-  </div>
-
-  <div class="form-actions">
-    <button type="button" class="btn-cancel" onclick="closeOrderModal()">Batal</button>
-    <button type="submit">Kirim ke WhatsApp</button>
-  </div>
-</form>
-
-  </div>
-</div>
-</div>
-
-  <script src="petugas.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-
-  <!-- Tambahan: tombol WhatsApp melayang -->
-  <button
-    type="button"
-    class="custom-wa-float"
-    id="customWaFloat"
-    aria-label="Tanya custom dekorasi melalui WhatsApp"
-    aria-haspopup="dialog"
-    aria-controls="customWaModal">
-    <i class="ri-whatsapp-fill" aria-hidden="true"></i>
-    <span class="custom-wa-float-label">Custom dekorasi? Chat kami!</span>
-  </button>
-
-  <!-- Tambahan: modal informasi custom dekorasi -->
-  <div
-    class="custom-wa-overlay"
-    id="customWaModal"
-    aria-hidden="true">
-    <div
-      class="custom-wa-dialog"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="customWaTitle"
-      ,
-      aria-describedby="customWaDescription">
-      <button type="button" class="custom-wa-close" id="customWaClose" aria-label="Tutup modal">&times;</button>
-
-      <div class="custom-wa-badge">
-        <i class="ri-whatsapp-fill" aria-hidden="true"></i>
-      </div>
-
-      <h2 id="customWaTitle">Butuh Custom Dekorasi?</h2>
-      <p id="customWaDescription">
-        Ingin dekorasi dengan tema, warna, atau desain sesuai keinginanmu?
-        Konsultasikan kebutuhan custom dekorasimu langsung melalui WhatsApp.
-      </p>
-
-      <a
-        class="custom-wa-chat"
-        href="https://wa.me/+6285271106448?text=Halo%20Dekorasi%20Hafiz%2C%20saya%20ingin%20bertanya%20tentang%20custom%20dekorasi.%20Boleh%20konsultasi%3F"
-        target="_blank"
-        rel="noopener noreferrer">
-        <i class="ri-whatsapp-fill" aria-hidden="true"></i>
-        Chat WhatsApp Sekarang
-      </a>
-
-      <button type="button" class="custom-wa-dismiss" id="customWaDismiss">Nanti saja</button>
-    </div>
-  </div>
-
-  <!-- Tambahan JavaScript: hanya mengatur tombol dan modal WhatsApp; script lama tetap dipakai -->
-  <script>
-    (function () {
-      const openButton = document.getElementById("customWaFloat");
-      const modal = document.getElementById("customWaModal");
-      const closeButton = document.getElementById("customWaClose");
-      const dismissButton = document.getElementById("customWaDismiss");
-
-      if (!openButton || !modal || !closeButton || !dismissButton) return;
-
-      let previousFocus = null;
-
-      function openCustomWaModal() {
-        previousFocus = document.activeElement;
-        modal.classList.add("is-open");
-        modal.setAttribute("aria-hidden", "false");
-        document.body.style.overflow = "hidden";
-        closeButton.focus();
-      }
-
-      function closeCustomWaModal() {
-        modal.classList.remove("is-open");
-        modal.setAttribute("aria-hidden", "true");
-        document.body.style.overflow = "";
-        if (previousFocus && typeof previousFocus.focus === "function") {
-          previousFocus.focus();
-        }
-      }
-
-      openButton.addEventListener("click", openCustomWaModal);
-      closeButton.addEventListener("click", closeCustomWaModal);
-      dismissButton.addEventListener("click", closeCustomWaModal);
-
-      modal.addEventListener("click", function (event) {
-        if (event.target === modal) closeCustomWaModal();
-      });
-
-      document.addEventListener("keydown", function (event) {
-        if (event.key === "Escape" && modal.classList.contains("is-open")) {
-          closeCustomWaModal();
-        }
-      });
-    })();
-  </script>
-
+<div class="welcome" id="welcome"><button class="x" id="wx">&times;</button><h3>Selamat Datang 👋</h3><p>Terima kasih sudah mengunjungi <b>Project Hafiz</b>. Silakan pilih produk dekorasi atau bakket sesuai kebutuhan Anda.</p><button class="btn main" id="wgo">Mulai Belanja</button></div>
+
+<button class="wa" id="waBtn" aria-label="Chat WhatsApp">💬<i>Custom dekorasi? Chat kami!</i></button>
+
+<div class="ov" id="detail"><div class="box"><button class="x" data-close>&times;</button><div class="dimg" id="dImg"></div><h3 id="dName"></h3><p id="dDesc" style="color:var(--mute);margin:0 0 8px"></p><div class="price" id="dPrice"></div><div class="acts"><button class="btn ghost" data-close>Tutup</button><button class="btn main" id="dOrder">Pesan</button></div></div></div>
+
+<div class="ov" id="order"><div class="box"><button class="x" data-close>&times;</button><h3>Form Pemesanan 📝</h3>
+<form id="form"><label>Produk</label><input id="fP" readonly><label>Harga</label><input id="fH" readonly>
+<label>Nama Lengkap</label><input id="fN" required><label>Nomor HP</label><input id="fT" type="tel" pattern="[0-9+ ]+" required>
+<div id="fDw"><label>Tanggal Acara</label><input id="fD" type="date"></div>
+<label>Alamat</label><textarea id="fA" rows="2" required></textarea><label>Catatan Tambahan</label><textarea id="fC" rows="2"></textarea>
+<div class="acts"><button type="button" class="btn ghost" data-close>Batal</button><button class="btn main" type="submit">Kirim ke WhatsApp</button></div></form></div></div>
+
+<script>
+var WA="6285271106448",W="WhatsApp Image 2025-09-10 at ";
+var CAT={ulang:["Ulang Tahun","🎂","linear-gradient(135deg,#ffc2dc,#ff8ac0)"],perpisahan:["Perpisahan","🎓","linear-gradient(135deg,#d8c4ff,#a98bff)"],aqiqah:["Aqiqah","🍼","linear-gradient(135deg,#b9e3ff,#7cc4ff)"],wisuda:["Wisuda","🎓","linear-gradient(135deg,#ffe29a,#ffbf5e)"],pengajian:["Pengajian","🕌","linear-gradient(135deg,#bdf0d0,#7fdca3)"],panggung:["Panggung","🎪","linear-gradient(135deg,#ffc9b0,#ff9a7a)"],bakket:["Bakket","🎁","linear-gradient(135deg,#ffc2dc,#ffd36b)"]};
+var D=[
+["perpisahan","Both ungu (1)","Dekorasi perpisahan lengkap (both)",700,"dekor21.png"],
+["perpisahan","Ninos (2)","Dekorasi perpisahan event di NINOS, mendekorasi panggung",700,"dekor22.png"],
+["ulang","Mermaid (1)","Dekorasi ulang tahun bertema mermaid",700,"deor13.jpeg"],
+["ulang","Tema Ungu (2)","Dekorasi ulang tahun berwarna ungu",700,"dekor1.jpeg"],
+["ulang","Tema Pink","Dekorasi ulang tahun berwarna pink",700,"dekor10.jpeg"],
+["ulang","Tema Tayo (3)","Bertema Tayo, bisa custom tema apa pun sesuai permintaan",700,"dekor14.jpeg"],
+["ulang","Tema Bola (4)","Dekorasi ulang tahun bertema bola",700,"dekor16.jpeg"],
+["ulang","Tema Mickey Mouse (5)","Dekorasi ulang tahun bertema Mickey Mouse",700,"dekor15.jpeg"],
+["ulang","Tema Hello Kitty (6)","Dekorasi ulang tahun bertema Hello Kitty",900,"dekor17.jpeg"],
+["ulang","Tema Cinderella (7)","Dekorasi ulang tahun bertema Cinderella",900,"dekor18.jpeg"],
+["aqiqah","Tema Biru (1)","Dekorasi aqiqah bertema biru",700,"dekor19.png"],
+["ulang","Tema Tayo 2 (8)","Dekorasi ulang tahun",700,"dekor2.jpeg"],
+["perpisahan","Perpisahan (3)","Dekorasi perpisahan",700,"dekor20.png"],
+["pengajian","Pengajian","Dekorasi untuk pengajian",700,W+"10.41.21 (1).jpeg"],
+["ulang","Tema Elsa (9)","Dekorasi ulang tahun tema Elsa",700,W+"10.41.21 (2).png"],
+["aqiqah","Aqiqah (2)","Dekorasi aqiqah",700,W+"10.41.21.png"],
+["ulang","Tema Pink (14)","Dekorasi tema pink",700,W+"10.42.07.png"],
+["pengajian","Pengajian (1)","Dekorasi pengajian",700,W+"11.00.52 (1).jpeg"],
+["ulang","Ulang Tahun (10)","Dekorasi ulang tahun",700,W+"11.00.52 (2).jpeg"],
+["pengajian","Pengajian (2)","Dekorasi pengajian",700,W+"11.00.52.jpeg"],
+["aqiqah","Aqiqah (3)","Dekorasi aqiqah",900,W+"11.00.53 (1).jpeg"],
+["ulang","Ulang Tahun (11)","Dekorasi ulang tahun",600,W+"11.00.54 (1).jpeg"],
+["perpisahan","Perpisahan (4)","Dekorasi perpisahan",700,W+"11.00.54.jpeg"],
+["ulang","Ulang Tahun (12)","Dekorasi ulang tahun",700,W+"11.00.58.jpeg"],
+["wisuda","Wisuda (1)","Dekorasi wisuda",700,W+"11.01.07.jpeg"],
+["perpisahan","Perpisahan (5)","Dekorasi perpisahan",700,W+"11.01.08 (1).jpeg"],
+["wisuda","Wisuda (2)","Dekorasi wisuda",700,W+"11.01.09.jpeg"],
+["wisuda","Wisuda (3)","Dekorasi wisuda",700,W+"11.01.08 (2).jpeg"],
+["perpisahan","Perpisahan (6)","Dekorasi perpisahan",700,W+"11.22.44.jpeg"],
+["wisuda","Wisuda (4)","Dekorasi wisuda",700,W+"11.22.45.jpeg"],
+["wisuda","Wisuda (5)","Dekorasi wisuda",700,W+"11.22.46 (1).jpeg"],
+["wisuda","Wisuda (6)","Dekorasi wisuda",700,W+"11.22.46 (2).jpeg"],
+["perpisahan","Perpisahan (7)","Dekorasi perpisahan",700,W+"11.22.46.jpeg"],
+["aqiqah","Aqiqah (4)","Dekorasi aqiqah",700,W+"11.22.47 (1).jpeg"],
+["aqiqah","Aqiqah (5)","Dekorasi aqiqah",700,W+"11.22.47.jpeg"],
+["ulang","Ulang Tahun (13)","Dekorasi ulang tahun",700,W+"11.22.48.jpeg"],
+["panggung","Panggung","Dekorasi panggung",700,W+"11.22.49.jpeg"],
+["aqiqah","Aqiqah (6)","Dekorasi aqiqah",700,W+"11.22.52.jpeg"],
+["aqiqah","Aqiqah (7)","Dekorasi aqiqah",700,W+"11.22.51 (1).jpeg"]
+].map(function(a){return{c:a[0],n:"Dekorasi "+CAT[a[0]][0]+" "+a[1],d:a[2],p:a[3]*1000,i:"png/"+a[4],t:"dekor"}});
+var B=[
+["Bukket Makanan","Bukket makanan / ulang tahun, isian makanan custom","Rp 150.000","barang.png"],
+["Bukket Uang Bunga Hitam (jasa)","Isian bisa uang mainan / asli dari customer","Rp 100.000","bukket.png"],
+["Bukket Uang Bunga Doraemon (jasa)","Isian bisa uang mainan / asli dari customer","Rp 100.000","bukket1.png"],
+["Snack Tower","Snack tower makanan anak-anak","Rp 500.000",W+"10.42.50.png"],
+["Parcel Makanan & Piring","Parcel makanan dan piring per paket","Rp 500.000",W+"11.22.50 (1).jpeg"],
+["Parcel Makanan Lebaran (jasa)","Isian custom dari customer","Rp 100.000",W+"11.22.50.jpeg"],
+["Parcel Lengkap","Parcel lengkap","Rp 250.000",W+"11.22.51.jpeg"]
+].map(function(a){return{c:"bakket",n:a[0],d:a[1],p:a[2],i:"png/"+a[3],t:"bakket"}});
+
+var tab="dekor",cat="all",grid=document.getElementById("grid"),cur=null;
+function rp(p){return typeof p==="number"?"Rp "+p.toLocaleString("id-ID"):p}
+function thumb(x){return '<span>'+CAT[x.c][1]+'</span><img loading="lazy" src="'+encodeURI(x.i)+'" alt="'+x.n+'" onerror="this.remove()">'}
+function render(){
+  var list=items(),q=document.getElementById("q").value.toLowerCase(),h="",n=0;
+  list.forEach(function(x,i){
+    if(cat!=="all"&&x.c!==cat)return;if(q&&(x.n+x.d).toLowerCase().indexOf(q)<0)return;n++;
+    h+='<div class="card"><div class="thumb" style="background:'+CAT[x.c][2]+'" data-v="'+i+'"><span class="badge">'+CAT[x.c][0]+'</span>'+thumb(x)+'</div><div class="body"><h3>'+x.n+'</h3><p>'+x.d+'</p><div class="price">'+rp(x.p)+'</div><div class="row"><button class="btn ghost" data-v="'+i+'">Lihat</button><button class="btn main" data-o="'+i+'">Pesan</button></div></div></div>';
+  });
+  grid.innerHTML=h;document.getElementById("empty").style.display=n?"none":"block";
+}
+function chips(){
+  var c=document.getElementById("chips");
+  if(tab!=="dekor"){c.innerHTML="";return}
+  var k=["all"].concat(Object.keys(CAT).filter(function(x){return x!=="bakket"}));
+  c.innerHTML=k.map(function(x){return '<button class="chip'+(x===cat?' on':'')+'" data-c="'+x+'">'+(x==="all"?"Semua":CAT[x][0])+'</button>'}).join("");
+}
+function items(){return tab==="dekor"?D:B}
+document.querySelectorAll(".tab").forEach(function(b){b.onclick=function(){document.querySelectorAll(".tab").forEach(function(t){t.classList.remove("on")});b.classList.add("on");tab=b.dataset.t;cat="all";chips();render()}});
+document.getElementById("q").oninput=render;
+document.getElementById("chips").onclick=function(e){var c=e.target.dataset.c;if(c){cat=c;chips();render()}};
+grid.onclick=function(e){var t=e.target.closest("[data-o],[data-v]");if(!t)return;if(t.dataset.o!==undefined)openOrder(items()[t.dataset.o]);else openDetail(items()[t.dataset.v])};
+function show(id,on){document.getElementById(id).classList.toggle("open",on);document.body.style.overflow=on?"hidden":""}
+function openDetail(x){cur=x;var d=document.getElementById("dImg");d.style.background=CAT[x.c][2];d.innerHTML=thumb(x);
+  document.getElementById("dName").textContent=x.n;document.getElementById("dDesc").textContent=x.d;document.getElementById("dPrice").textContent=rp(x.p);show("detail",true)}
+document.getElementById("dOrder").onclick=function(){show("detail",false);openOrder(cur)};
+function openOrder(x){cur=x;document.getElementById("fP").value=x.n;document.getElementById("fH").value=rp(x.p);
+  var dek=x.t==="dekor";document.getElementById("fDw").style.display=dek?"block":"none";document.getElementById("fD").required=dek;show("order",true)}
+function closeAll(){show("detail",false);show("order",false)}
+document.querySelectorAll("[data-close]").forEach(function(b){b.onclick=closeAll});
+document.querySelectorAll(".ov").forEach(function(o){o.onclick=function(e){if(e.target===o)closeAll()}});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")closeAll()});
+document.getElementById("form").onsubmit=function(e){
+  e.preventDefault();var g=function(i){return document.getElementById(i).value.trim()};
+  var m="Assalamu’alaikum warahmatullahi wabarakatuh,\nSaya ingin memesan:\n\n*Produk:* "+g("fP")+"\n*Harga:* "+g("fH")+"\n*Nama:* "+g("fN")+"\n*No. HP:* "+g("fT")+(cur.t==="dekor"?"\n*Tanggal Acara:* "+g("fD"):"")+"\n*Alamat:* "+g("fA")+"\n*Catatan:* "+(g("fC")||"-");
+  window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(m),"_blank");
+};
+document.getElementById("waBtn").onclick=function(){window.open("https://wa.me/"+WA+"?text="+encodeURIComponent("Halo Dekorasi Hafiz, saya ingin bertanya tentang custom dekorasi. Boleh konsultasi?"),"_blank")};
+var side=document.getElementById("side");
+document.getElementById("burger").onclick=function(){side.classList.add("open")};
+document.getElementById("shade").onclick=function(){side.classList.remove("open")};
+document.getElementById("lokasi").onclick=function(e){e.preventDefault();window.open("https://www.google.com/maps/search/Batam","_blank")};
+var SL=[["10.42.07.png","Best Seller","Dekorasi favorit pelanggan kami","#ef0070,#ff8ac0"],["11.01.08 (1).jpeg","Wisudah dan Aqiqah","Momen spesial, dekor yang berkesan","#7c4dff,#c39bff"],["11.22.50 (1).jpeg","Bucket dan Parsel","Hadiah cantik penuh makna","#ff9a3c,#ffd36b"]];
+var sh=document.getElementById("slider"),dots=document.getElementById("dots"),si=0;
+SL.forEach(function(s,i){var d=document.createElement("div");d.className="slide";d.style.backgroundImage="url('"+encodeURI("png/"+W+s[0])+"'),linear-gradient(135deg,"+s[3]+")";d.innerHTML='<div class="cap"><h2>'+s[1]+'</h2><p>'+s[2]+'</p></div>';sh.insertBefore(d,dots);var t=document.createElement("i");t.onclick=function(){go(i)};dots.appendChild(t)});
+var sl=sh.querySelectorAll(".slide");
+function go(i){si=i;sl.forEach(function(s,k){s.classList.toggle("on",k===i);dots.children[k].classList.toggle("on",k===i)})}
+go(0);setInterval(function(){go((si+1)%sl.length)},4000);
+var wl=document.getElementById("welcome");
+setTimeout(function(){wl.classList.add("open")},700);
+document.getElementById("wx").onclick=document.getElementById("wgo").onclick=function(){wl.classList.remove("open")};
+chips();render();
+</script>
 </body>
 </html>
